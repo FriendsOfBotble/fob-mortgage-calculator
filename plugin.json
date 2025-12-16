@@ -1,0 +1,11 @@
+{
+    "id": "friendsofbotble/fob-mortgage-calculator",
+    "name": "FOB Mortgage Calculator",
+    "namespace": "FriendsOfBotble\\MortgageCalculator\\",
+    "provider": "FriendsOfBotble\\MortgageCalculator\\Providers\\MortgageCalculatorServiceProvider",
+    "author": "Friends Of Botble",
+    "url": "https://github.com/FriendsOfBotble/fob-mortgage-calculator",
+    "version": "1.0.0",
+    "description": "Simple and flexible mortgage calculator with shortcode and widget support.",
+    "minimum_core_version": "7.5.0"
+}
