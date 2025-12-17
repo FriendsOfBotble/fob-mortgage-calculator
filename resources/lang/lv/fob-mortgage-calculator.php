@@ -39,7 +39,9 @@ return [
         'form_size' => 'Formas Izmērs',
         'form_alignment' => 'Formas Izlīdzināšana',
         'form_margin' => 'Formas Mala',
+        'form_margin_helper' => 'Telpa ārpus formas (piemēram, 20px, 1rem, 20px 0)',
         'form_padding' => 'Formas Iekšmala',
+        'form_padding_helper' => 'Telpa formas iekšpusē (piemēram, 20px, 1rem, 30px 20px)',
         'form_title' => 'Formas Nosaukums',
         'form_description' => 'Formas Apraksts',
         'default_price' => 'Noklusējuma Īpašuma Cena',
@@ -87,14 +89,6 @@ return [
         'start' => 'Pa Kreisi (Sākums)',
         'center' => 'Centrā',
         'end' => 'Pa Labi (Beigas)',
-    ],
-
-    'spacing' => [
-        'none' => 'Nav',
-        'sm' => 'Mazs',
-        'default' => 'Noklusējums',
-        'lg' => 'Liels',
-        'xl' => 'Ļoti Liels',
     ],
 
     'price_from' => [

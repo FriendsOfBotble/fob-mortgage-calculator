@@ -39,7 +39,9 @@ return [
         'form_size' => 'Vormi Suurus',
         'form_alignment' => 'Vormi Joondus',
         'form_margin' => 'Vormi Veerised',
+        'form_margin_helper' => 'Ruum vormi välisküljel (nt 20px, 1rem, 20px 0)',
         'form_padding' => 'Vormi Polsterdus',
+        'form_padding_helper' => 'Ruum vormi sees (nt 20px, 1rem, 30px 20px)',
         'form_title' => 'Vormi Pealkiri',
         'form_description' => 'Vormi Kirjeldus',
         'default_price' => 'Vaikimisi Kinnisvara Hind',
@@ -87,14 +89,6 @@ return [
         'start' => 'Vasakul (Algus)',
         'center' => 'Keskel',
         'end' => 'Paremal (Lõpp)',
-    ],
-
-    'spacing' => [
-        'none' => 'Puudub',
-        'sm' => 'Väike',
-        'default' => 'Vaikimisi',
-        'lg' => 'Suur',
-        'xl' => 'Väga Suur',
     ],
 
     'price_from' => [

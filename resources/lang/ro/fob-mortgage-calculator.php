@@ -39,7 +39,9 @@ return [
         'form_size' => 'Dimensiune formular',
         'form_alignment' => 'Aliniere formular',
         'form_margin' => 'Margine formular',
+        'form_margin_helper' => 'Spațiu în afara formularului (de ex., 20px, 1rem, 20px 0)',
         'form_padding' => 'Spațiere internă formular',
+        'form_padding_helper' => 'Spațiu în interiorul formularului (de ex., 20px, 1rem, 30px 20px)',
         'form_title' => 'Titlu formular',
         'form_description' => 'Descriere formular',
         'default_price' => 'Preț proprietate implicit',
@@ -87,14 +89,6 @@ return [
         'start' => 'Stânga (Început)',
         'center' => 'Centru',
         'end' => 'Dreapta (Sfârșit)',
-    ],
-
-    'spacing' => [
-        'none' => 'Niciunul',
-        'sm' => 'Mic',
-        'default' => 'Implicit',
-        'lg' => 'Mare',
-        'xl' => 'Extra mare',
     ],
 
     'price_from' => [

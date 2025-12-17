@@ -39,7 +39,9 @@ return [
         'form_size' => 'Ukuran Formulir',
         'form_alignment' => 'Perataan Formulir',
         'form_margin' => 'Margin Formulir',
+        'form_margin_helper' => 'Ruang di luar formulir (contoh: 20px, 1rem, 20px 0)',
         'form_padding' => 'Padding Formulir',
+        'form_padding_helper' => 'Ruang di dalam formulir (contoh: 20px, 1rem, 30px 20px)',
         'form_title' => 'Judul Formulir',
         'form_description' => 'Deskripsi Formulir',
         'default_price' => 'Harga properti default',
@@ -87,14 +89,6 @@ return [
         'start' => 'Kiri (Awal)',
         'center' => 'Tengah',
         'end' => 'Kanan (Akhir)',
-    ],
-
-    'spacing' => [
-        'none' => 'Tidak Ada',
-        'sm' => 'Kecil',
-        'default' => 'Default',
-        'lg' => 'Besar',
-        'xl' => 'Sangat Besar',
     ],
 
     'price_from' => [

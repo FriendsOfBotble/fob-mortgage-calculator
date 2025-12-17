@@ -39,7 +39,9 @@ return [
         'form_size' => 'ขนาดฟอร์ม',
         'form_alignment' => 'การจัดแนวฟอร์ม',
         'form_margin' => 'ระยะขอบฟอร์ม',
+        'form_margin_helper' => 'พื้นที่ภายนอกฟอร์ม (เช่น 20px, 1rem, 20px 0)',
         'form_padding' => 'ระยะช่องว่างฟอร์ม',
+        'form_padding_helper' => 'พื้นที่ภายในฟอร์ม (เช่น 20px, 1rem, 30px 20px)',
         'form_title' => 'หัวข้อฟอร์ม',
         'form_description' => 'คำอธิบายฟอร์ม',
         'default_price' => 'ราคาทรัพย์สินเริ่มต้น',
@@ -87,14 +89,6 @@ return [
         'start' => 'ซ้าย (เริ่มต้น)',
         'center' => 'กลาง',
         'end' => 'ขวา (สิ้นสุด)',
-    ],
-
-    'spacing' => [
-        'none' => 'ไม่มี',
-        'sm' => 'เล็ก',
-        'default' => 'ค่าเริ่มต้น',
-        'lg' => 'ใหญ่',
-        'xl' => 'ใหญ่พิเศษ',
     ],
 
     'price_from' => [

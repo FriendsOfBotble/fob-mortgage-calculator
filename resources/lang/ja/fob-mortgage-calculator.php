@@ -39,7 +39,9 @@ return [
         'form_size' => 'フォームサイズ',
         'form_alignment' => 'フォーム配置',
         'form_margin' => 'フォーム余白',
+        'form_margin_helper' => 'フォーム外側の余白（例：20px, 1rem, 20px 0）',
         'form_padding' => 'フォーム内側余白',
+        'form_padding_helper' => 'フォーム内側の余白（例：20px, 1rem, 30px 20px）',
         'form_title' => 'フォームタイトル',
         'form_description' => 'フォーム説明',
         'default_price' => 'デフォルト物件価格',
@@ -87,14 +89,6 @@ return [
         'start' => '左揃え（開始）',
         'center' => '中央揃え',
         'end' => '右揃え（終了）',
-    ],
-
-    'spacing' => [
-        'none' => 'なし',
-        'sm' => '小',
-        'default' => 'デフォルト',
-        'lg' => '大',
-        'xl' => '特大',
     ],
 
     'price_from' => [

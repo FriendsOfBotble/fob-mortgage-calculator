@@ -39,7 +39,9 @@ return [
         'form_size' => 'Formulärstorlek',
         'form_alignment' => 'Formulärjustering',
         'form_margin' => 'Formulärmarginal',
+        'form_margin_helper' => 'Utrymme utanför formuläret (t.ex. 20px, 1rem, 20px 0)',
         'form_padding' => 'Formulärutfyllnad',
+        'form_padding_helper' => 'Utrymme inuti formuläret (t.ex. 20px, 1rem, 30px 20px)',
         'form_title' => 'Formulärtitel',
         'form_description' => 'Formulärbeskrivning',
         'default_price' => 'Standard Fastighetspris',
@@ -87,14 +89,6 @@ return [
         'start' => 'Vänster (Start)',
         'center' => 'Centrum',
         'end' => 'Höger (Slut)',
-    ],
-
-    'spacing' => [
-        'none' => 'Ingen',
-        'sm' => 'Liten',
-        'default' => 'Standard',
-        'lg' => 'Stor',
-        'xl' => 'Extra Stor',
     ],
 
     'price_from' => [

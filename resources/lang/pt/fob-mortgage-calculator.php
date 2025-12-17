@@ -39,7 +39,9 @@ return [
         'form_size' => 'Tamanho do Formulário',
         'form_alignment' => 'Alinhamento do Formulário',
         'form_margin' => 'Margem do Formulário',
+        'form_margin_helper' => 'Espaço exterior do formulário (ex: 20px, 1rem, 20px 0)',
         'form_padding' => 'Preenchimento do Formulário',
+        'form_padding_helper' => 'Espaço interior do formulário (ex: 20px, 1rem, 30px 20px)',
         'form_title' => 'Título do Formulário',
         'form_description' => 'Descrição do Formulário',
         'default_price' => 'Preço do Imóvel Padrão',
@@ -87,14 +89,6 @@ return [
         'start' => 'Esquerda (Início)',
         'center' => 'Centro',
         'end' => 'Direita (Fim)',
-    ],
-
-    'spacing' => [
-        'none' => 'Nenhum',
-        'sm' => 'Pequeno',
-        'default' => 'Padrão',
-        'lg' => 'Grande',
-        'xl' => 'Extra Grande',
     ],
 
     'price_from' => [

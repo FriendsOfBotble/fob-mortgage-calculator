@@ -39,7 +39,9 @@ return [
         'form_size' => 'Lomakekoko',
         'form_alignment' => 'Lomakkeen Tasaus',
         'form_margin' => 'Lomakkeen Marginaali',
+        'form_margin_helper' => 'Tila lomakkeen ulkopuolella (esim. 20px, 1rem, 20px 0)',
         'form_padding' => 'Lomakkeen Täyte',
+        'form_padding_helper' => 'Tila lomakkeen sisällä (esim. 20px, 1rem, 30px 20px)',
         'form_title' => 'Lomakkeen Otsikko',
         'form_description' => 'Lomakkeen Kuvaus',
         'default_price' => 'Oletuskiinteistön Hinta',
@@ -87,14 +89,6 @@ return [
         'start' => 'Vasen (Alku)',
         'center' => 'Keskellä',
         'end' => 'Oikea (Loppu)',
-    ],
-
-    'spacing' => [
-        'none' => 'Ei Mitään',
-        'sm' => 'Pieni',
-        'default' => 'Oletus',
-        'lg' => 'Suuri',
-        'xl' => 'Erittäin Suuri',
     ],
 
     'price_from' => [

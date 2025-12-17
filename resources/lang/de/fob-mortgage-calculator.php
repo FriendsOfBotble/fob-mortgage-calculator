@@ -39,7 +39,9 @@ return [
         'form_size' => 'Formulargröße',
         'form_alignment' => 'Formularausrichtung',
         'form_margin' => 'Formularrand',
+        'form_margin_helper' => 'Abstand außerhalb des Formulars (z.B. 20px, 1rem, 20px 0)',
         'form_padding' => 'Formularinnenabstand',
+        'form_padding_helper' => 'Abstand innerhalb des Formulars (z.B. 20px, 1rem, 30px 20px)',
         'form_title' => 'Formulartitel',
         'form_description' => 'Formularbeschreibung',
         'default_price' => 'Standard-Immobilienpreis',
@@ -87,14 +89,6 @@ return [
         'start' => 'Links (Anfang)',
         'center' => 'Zentriert',
         'end' => 'Rechts (Ende)',
-    ],
-
-    'spacing' => [
-        'none' => 'Kein',
-        'sm' => 'Klein',
-        'default' => 'Standard',
-        'lg' => 'Groß',
-        'xl' => 'Extra groß',
     ],
 
     'price_from' => [

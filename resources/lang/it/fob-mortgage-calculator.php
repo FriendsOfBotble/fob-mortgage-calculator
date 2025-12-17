@@ -39,7 +39,9 @@ return [
         'form_size' => 'Dimensione del Modulo',
         'form_alignment' => 'Allineamento del Modulo',
         'form_margin' => 'Margine del Modulo',
+        'form_margin_helper' => 'Spazio esterno del modulo (es: 20px, 1rem, 20px 0)',
         'form_padding' => 'Padding del Modulo',
+        'form_padding_helper' => 'Spazio interno del modulo (es: 20px, 1rem, 30px 20px)',
         'form_title' => 'Titolo del Modulo',
         'form_description' => 'Descrizione del Modulo',
         'default_price' => 'Prezzo Immobile Predefinito',
@@ -87,14 +89,6 @@ return [
         'start' => 'Sinistra (Inizio)',
         'center' => 'Centro',
         'end' => 'Destra (Fine)',
-    ],
-
-    'spacing' => [
-        'none' => 'Nessuno',
-        'sm' => 'Piccolo',
-        'default' => 'Predefinito',
-        'lg' => 'Grande',
-        'xl' => 'Extra Grande',
     ],
 
     'price_from' => [

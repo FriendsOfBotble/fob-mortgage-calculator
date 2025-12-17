@@ -39,7 +39,9 @@ return [
         'form_size' => 'Formuliergrootte',
         'form_alignment' => 'Formulieruitlijning',
         'form_margin' => 'Formuliermarge',
+        'form_margin_helper' => 'Ruimte buiten het formulier (bijv. 20px, 1rem, 20px 0)',
         'form_padding' => 'Formulieropvulling',
+        'form_padding_helper' => 'Ruimte binnen het formulier (bijv. 20px, 1rem, 30px 20px)',
         'form_title' => 'Formuliertitel',
         'form_description' => 'Formulierbeschrijving',
         'default_price' => 'Standaard Woningprijs',
@@ -87,14 +89,6 @@ return [
         'start' => 'Links (Start)',
         'center' => 'Midden',
         'end' => 'Rechts (Einde)',
-    ],
-
-    'spacing' => [
-        'none' => 'Geen',
-        'sm' => 'Klein',
-        'default' => 'Standaard',
-        'lg' => 'Groot',
-        'xl' => 'Extra Groot',
     ],
 
     'price_from' => [

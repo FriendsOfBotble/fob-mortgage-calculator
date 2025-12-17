@@ -39,7 +39,9 @@ return [
         'form_size' => 'ফর্ম সাইজ',
         'form_alignment' => 'ফর্ম সারিবদ্ধতা',
         'form_margin' => 'ফর্ম মার্জিন',
+        'form_margin_helper' => 'ফর্মের বাইরের স্থান (যেমন: 20px, 1rem, 20px 0)',
         'form_padding' => 'ফর্ম প্যাডিং',
+        'form_padding_helper' => 'ফর্মের ভিতরের স্থান (যেমন: 20px, 1rem, 30px 20px)',
         'form_title' => 'ফর্ম শিরোনাম',
         'form_description' => 'ফর্ম বিবরণ',
         'default_price' => 'ডিফল্ট সম্পত্তি মূল্য',
@@ -87,14 +89,6 @@ return [
         'start' => 'বাম (শুরু)',
         'center' => 'কেন্দ্র',
         'end' => 'ডান (শেষ)',
-    ],
-
-    'spacing' => [
-        'none' => 'কোনটিই নয়',
-        'sm' => 'ছোট',
-        'default' => 'ডিফল্ট',
-        'lg' => 'বড়',
-        'xl' => 'অতিরিক্ত বড়',
     ],
 
     'price_from' => [

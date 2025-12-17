@@ -39,7 +39,9 @@ return [
         'form_size' => 'Veličina obrasca',
         'form_alignment' => 'Poravnanje obrasca',
         'form_margin' => 'Vanjski odmak obrasca',
+        'form_margin_helper' => 'Prostor izvan obrasca (npr. 20px, 1rem, 20px 0)',
         'form_padding' => 'Unutarnji odmak obrasca',
+        'form_padding_helper' => 'Prostor unutar obrasca (npr. 20px, 1rem, 30px 20px)',
         'form_title' => 'Naslov obrasca',
         'form_description' => 'Opis obrasca',
         'default_price' => 'Zadana cijena nekretnine',
@@ -87,14 +89,6 @@ return [
         'start' => 'Lijevo (Početak)',
         'center' => 'Centar',
         'end' => 'Desno (Kraj)',
-    ],
-
-    'spacing' => [
-        'none' => 'Bez',
-        'sm' => 'Malo',
-        'default' => 'Zadano',
-        'lg' => 'Veliko',
-        'xl' => 'Ekstra veliko',
     ],
 
     'price_from' => [

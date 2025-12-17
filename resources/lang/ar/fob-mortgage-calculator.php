@@ -39,7 +39,9 @@ return [
         'form_size' => 'حجم النموذج',
         'form_alignment' => 'محاذاة النموذج',
         'form_margin' => 'هامش النموذج',
+        'form_margin_helper' => 'المسافة خارج النموذج (مثال: 20px, 1rem, 20px 0)',
         'form_padding' => 'حشوة النموذج',
+        'form_padding_helper' => 'المسافة داخل النموذج (مثال: 20px, 1rem, 30px 20px)',
         'form_title' => 'عنوان النموذج',
         'form_description' => 'وصف النموذج',
         'default_price' => 'سعر العقار الافتراضي',
@@ -87,14 +89,6 @@ return [
         'start' => 'يسار (بداية)',
         'center' => 'وسط',
         'end' => 'يمين (نهاية)',
-    ],
-
-    'spacing' => [
-        'none' => 'بدون',
-        'sm' => 'صغير',
-        'default' => 'افتراضي',
-        'lg' => 'كبير',
-        'xl' => 'كبير جداً',
     ],
 
     'price_from' => [

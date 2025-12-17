@@ -39,7 +39,9 @@ return [
         'form_size' => '表单大小',
         'form_alignment' => '表单对齐',
         'form_margin' => '表单边距',
+        'form_margin_helper' => '表单外部间距（例如：20px, 1rem, 20px 0）',
         'form_padding' => '表单内边距',
+        'form_padding_helper' => '表单内部间距（例如：20px, 1rem, 30px 20px）',
         'form_title' => '表单标题',
         'form_description' => '表单描述',
         'default_price' => '默认房产价格',
@@ -87,14 +89,6 @@ return [
         'start' => '左对齐（开始）',
         'center' => '居中',
         'end' => '右对齐（结束）',
-    ],
-
-    'spacing' => [
-        'none' => '无',
-        'sm' => '小',
-        'default' => '默认',
-        'lg' => '大',
-        'xl' => '超大',
     ],
 
     'price_from' => [

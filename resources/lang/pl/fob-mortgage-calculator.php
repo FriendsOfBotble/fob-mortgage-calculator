@@ -39,7 +39,9 @@ return [
         'form_size' => 'Rozmiar formularza',
         'form_alignment' => 'Wyrównanie formularza',
         'form_margin' => 'Margines formularza',
+        'form_margin_helper' => 'Przestrzeń na zewnątrz formularza (np. 20px, 1rem, 20px 0)',
         'form_padding' => 'Padding formularza',
+        'form_padding_helper' => 'Przestrzeń wewnątrz formularza (np. 20px, 1rem, 30px 20px)',
         'form_title' => 'Tytuł formularza',
         'form_description' => 'Opis formularza',
         'default_price' => 'Domyślna cena nieruchomości',
@@ -87,14 +89,6 @@ return [
         'start' => 'Do lewej (Start)',
         'center' => 'Do środka',
         'end' => 'Do prawej (Koniec)',
-    ],
-
-    'spacing' => [
-        'none' => 'Brak',
-        'sm' => 'Mały',
-        'default' => 'Domyślny',
-        'lg' => 'Duży',
-        'xl' => 'Bardzo duży',
     ],
 
     'price_from' => [

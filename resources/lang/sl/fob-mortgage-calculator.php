@@ -39,7 +39,9 @@ return [
         'form_size' => 'Velikost obrazca',
         'form_alignment' => 'Poravnava obrazca',
         'form_margin' => 'Zunanji odmik obrazca',
+        'form_margin_helper' => 'Prostor zunaj obrazca (npr. 20px, 1rem, 20px 0)',
         'form_padding' => 'Notranji odmik obrazca',
+        'form_padding_helper' => 'Prostor znotraj obrazca (npr. 20px, 1rem, 30px 20px)',
         'form_title' => 'Naslov obrazca',
         'form_description' => 'Opis obrazca',
         'default_price' => 'Privzeta cena nepremičnine',
@@ -87,14 +89,6 @@ return [
         'start' => 'Levo (Začetek)',
         'center' => 'Sredina',
         'end' => 'Desno (Konec)',
-    ],
-
-    'spacing' => [
-        'none' => 'Brez',
-        'sm' => 'Malo',
-        'default' => 'Privzeto',
-        'lg' => 'Veliko',
-        'xl' => 'Ekstra veliko',
     ],
 
     'price_from' => [

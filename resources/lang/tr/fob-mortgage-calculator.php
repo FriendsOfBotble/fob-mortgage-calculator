@@ -39,7 +39,9 @@ return [
         'form_size' => 'Form Boyutu',
         'form_alignment' => 'Form Hizalaması',
         'form_margin' => 'Form Kenar Boşluğu',
+        'form_margin_helper' => 'Form dışındaki boşluk (örn. 20px, 1rem, 20px 0)',
         'form_padding' => 'Form İç Boşluğu',
+        'form_padding_helper' => 'Form içindeki boşluk (örn. 20px, 1rem, 30px 20px)',
         'form_title' => 'Form Başlığı',
         'form_description' => 'Form Açıklaması',
         'default_price' => 'Varsayılan Emlak Fiyatı',
@@ -87,14 +89,6 @@ return [
         'start' => 'Sol (Başlangıç)',
         'center' => 'Orta',
         'end' => 'Sağ (Son)',
-    ],
-
-    'spacing' => [
-        'none' => 'Yok',
-        'sm' => 'Küçük',
-        'default' => 'Varsayılan',
-        'lg' => 'Büyük',
-        'xl' => 'Çok Büyük',
     ],
 
     'price_from' => [

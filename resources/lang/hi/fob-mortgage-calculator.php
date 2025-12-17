@@ -39,7 +39,9 @@ return [
         'form_size' => 'फॉर्म आकार',
         'form_alignment' => 'फॉर्म संरेखण',
         'form_margin' => 'फॉर्म मार्जिन',
+        'form_margin_helper' => 'फॉर्म के बाहर का स्थान (उदा. 20px, 1rem, 20px 0)',
         'form_padding' => 'फॉर्म पैडिंग',
+        'form_padding_helper' => 'फॉर्म के अंदर का स्थान (उदा. 20px, 1rem, 30px 20px)',
         'form_title' => 'फॉर्म शीर्षक',
         'form_description' => 'फॉर्म विवरण',
         'default_price' => 'डिफ़ॉल्ट संपत्ति मूल्य',
@@ -87,14 +89,6 @@ return [
         'start' => 'बाएं (प्रारंभ)',
         'center' => 'केंद्र',
         'end' => 'दाएं (अंत)',
-    ],
-
-    'spacing' => [
-        'none' => 'कोई नहीं',
-        'sm' => 'छोटा',
-        'default' => 'डिफ़ॉल्ट',
-        'lg' => 'बड़ा',
-        'xl' => 'अतिरिक्त बड़ा',
     ],
 
     'price_from' => [

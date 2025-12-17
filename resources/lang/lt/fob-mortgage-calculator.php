@@ -39,7 +39,9 @@ return [
         'form_size' => 'Formos Dydis',
         'form_alignment' => 'Formos Lygiavimas',
         'form_margin' => 'Formos Paraštė',
+        'form_margin_helper' => 'Vieta už formos ribų (pvz., 20px, 1rem, 20px 0)',
         'form_padding' => 'Formos Užpildymas',
+        'form_padding_helper' => 'Vieta formoje (pvz., 20px, 1rem, 30px 20px)',
         'form_title' => 'Formos Pavadinimas',
         'form_description' => 'Formos Aprašymas',
         'default_price' => 'Numatytoji Nekilnojamojo Turto Kaina',
@@ -87,14 +89,6 @@ return [
         'start' => 'Kairėje (Pradžia)',
         'center' => 'Centre',
         'end' => 'Dešinėje (Pabaiga)',
-    ],
-
-    'spacing' => [
-        'none' => 'Nėra',
-        'sm' => 'Mažas',
-        'default' => 'Numatytasis',
-        'lg' => 'Didelis',
-        'xl' => 'Labai Didelis',
     ],
 
     'price_from' => [

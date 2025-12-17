@@ -39,7 +39,9 @@ return [
         'form_size' => 'Kích thước biểu mẫu',
         'form_alignment' => 'Căn chỉnh biểu mẫu',
         'form_margin' => 'Lề biểu mẫu',
+        'form_margin_helper' => 'Khoảng cách bên ngoài biểu mẫu (ví dụ: 20px, 1rem, 20px 0)',
         'form_padding' => 'Đệm biểu mẫu',
+        'form_padding_helper' => 'Khoảng cách bên trong biểu mẫu (ví dụ: 20px, 1rem, 30px 20px)',
         'form_title' => 'Tiêu đề biểu mẫu',
         'form_description' => 'Mô tả biểu mẫu',
         'default_price' => 'Giá bất động sản mặc định',
@@ -87,14 +89,6 @@ return [
         'start' => 'Trái',
         'center' => 'Giữa',
         'end' => 'Phải',
-    ],
-
-    'spacing' => [
-        'none' => 'Không',
-        'sm' => 'Nhỏ',
-        'default' => 'Mặc định',
-        'lg' => 'Lớn',
-        'xl' => 'Rất lớn',
     ],
 
     'price_from' => [

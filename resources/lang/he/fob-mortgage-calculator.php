@@ -39,7 +39,9 @@ return [
         'form_size' => 'גודל טופס',
         'form_alignment' => 'יישור טופס',
         'form_margin' => 'שוליים חיצוניים של טופס',
+        'form_margin_helper' => 'מרווח מחוץ לטופס (למשל, 20px, 1rem, 20px 0)',
         'form_padding' => 'שוליים פנימיים של טופס',
+        'form_padding_helper' => 'מרווח בתוך הטופס (למשל, 20px, 1rem, 30px 20px)',
         'form_title' => 'כותרת טופס',
         'form_description' => 'תיאור טופס',
         'default_price' => 'מחיר נכס ברירת מחדל',
@@ -87,14 +89,6 @@ return [
         'start' => 'שמאל (התחלה)',
         'center' => 'מרכז',
         'end' => 'ימין (סוף)',
-    ],
-
-    'spacing' => [
-        'none' => 'ללא',
-        'sm' => 'קטן',
-        'default' => 'ברירת מחדל',
-        'lg' => 'גדול',
-        'xl' => 'גדול במיוחד',
     ],
 
     'price_from' => [

@@ -39,7 +39,9 @@ return [
         'form_size' => 'Taille du Formulaire',
         'form_alignment' => 'Alignement du Formulaire',
         'form_margin' => 'Marge du Formulaire',
+        'form_margin_helper' => 'Espace extérieur du formulaire (ex: 20px, 1rem, 20px 0)',
         'form_padding' => 'Rembourrage du Formulaire',
+        'form_padding_helper' => 'Espace intérieur du formulaire (ex: 20px, 1rem, 30px 20px)',
         'form_title' => 'Titre du Formulaire',
         'form_description' => 'Description du Formulaire',
         'default_price' => 'Prix de la Propriété par Défaut',
@@ -87,14 +89,6 @@ return [
         'start' => 'Gauche (Début)',
         'center' => 'Centre',
         'end' => 'Droite (Fin)',
-    ],
-
-    'spacing' => [
-        'none' => 'Aucun',
-        'sm' => 'Petit',
-        'default' => 'Par Défaut',
-        'lg' => 'Grand',
-        'xl' => 'Extra Grand',
     ],
 
     'price_from' => [

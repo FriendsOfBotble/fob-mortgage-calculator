@@ -39,7 +39,9 @@ return [
         'form_size' => 'Veľkosť formulára',
         'form_alignment' => 'Zarovnanie formulára',
         'form_margin' => 'Okraj formulára',
+        'form_margin_helper' => 'Priestor mimo formulára (napr. 20px, 1rem, 20px 0)',
         'form_padding' => 'Vnútorný okraj formulára',
+        'form_padding_helper' => 'Priestor vo vnútri formulára (napr. 20px, 1rem, 30px 20px)',
         'form_title' => 'Názov formulára',
         'form_description' => 'Popis formulára',
         'default_price' => 'Predvolená cena nehnuteľnosti',
@@ -87,14 +89,6 @@ return [
         'start' => 'Vľavo (Začiatok)',
         'center' => 'Na stred',
         'end' => 'Vpravo (Koniec)',
-    ],
-
-    'spacing' => [
-        'none' => 'Žiadny',
-        'sm' => 'Malý',
-        'default' => 'Predvolený',
-        'lg' => 'Veľký',
-        'xl' => 'Extra veľký',
     ],
 
     'price_from' => [

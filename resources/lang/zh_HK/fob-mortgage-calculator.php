@@ -39,7 +39,9 @@ return [
         'form_size' => '表單大小',
         'form_alignment' => '表單對齊',
         'form_margin' => '表單外邊距',
+        'form_margin_helper' => '表單外部間距（例如：20px, 1rem, 20px 0）',
         'form_padding' => '表單內邊距',
+        'form_padding_helper' => '表單內部間距（例如：20px, 1rem, 30px 20px）',
         'form_title' => '表單標題',
         'form_description' => '表單描述',
         'default_price' => '預設物業價格',
@@ -87,14 +89,6 @@ return [
         'start' => '靠左（起始）',
         'center' => '置中',
         'end' => '靠右（結束）',
-    ],
-
-    'spacing' => [
-        'none' => '無',
-        'sm' => '小',
-        'default' => '預設',
-        'lg' => '大',
-        'xl' => '特大',
     ],
 
     'price_from' => [

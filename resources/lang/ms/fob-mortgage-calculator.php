@@ -39,7 +39,9 @@ return [
         'form_size' => 'Saiz Borang',
         'form_alignment' => 'Penjajaran Borang',
         'form_margin' => 'Margin Borang',
+        'form_margin_helper' => 'Ruang di luar borang (cth: 20px, 1rem, 20px 0)',
         'form_padding' => 'Padding Borang',
+        'form_padding_helper' => 'Ruang di dalam borang (cth: 20px, 1rem, 30px 20px)',
         'form_title' => 'Tajuk Borang',
         'form_description' => 'Keterangan Borang',
         'default_price' => 'Harga hartanah lalai',
@@ -87,14 +89,6 @@ return [
         'start' => 'Kiri (Mula)',
         'center' => 'Tengah',
         'end' => 'Kanan (Tamat)',
-    ],
-
-    'spacing' => [
-        'none' => 'Tiada',
-        'sm' => 'Kecil',
-        'default' => 'Lalai',
-        'lg' => 'Besar',
-        'xl' => 'Sangat Besar',
     ],
 
     'price_from' => [

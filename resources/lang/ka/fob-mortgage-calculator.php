@@ -39,7 +39,9 @@ return [
         'form_size' => 'ფორმის ზომა',
         'form_alignment' => 'ფორმის გასწორება',
         'form_margin' => 'ფორმის ველი',
+        'form_margin_helper' => 'სივრცე ფორმის გარეთ (მაგ., 20px, 1rem, 20px 0)',
         'form_padding' => 'ფორმის შიდა ველი',
+        'form_padding_helper' => 'სივრცე ფორმის შიგნით (მაგ., 20px, 1rem, 30px 20px)',
         'form_title' => 'ფორმის სათაური',
         'form_description' => 'ფორმის აღწერა',
         'default_price' => 'ნაგულისხმევი ქონების ფასი',
@@ -87,14 +89,6 @@ return [
         'start' => 'მარცხნივ (დასაწყისი)',
         'center' => 'ცენტრში',
         'end' => 'მარჯვნივ (დასასრული)',
-    ],
-
-    'spacing' => [
-        'none' => 'არა',
-        'sm' => 'პატარა',
-        'default' => 'ნაგულისხმევი',
-        'lg' => 'დიდი',
-        'xl' => 'ძალიან დიდი',
     ],
 
     'price_from' => [

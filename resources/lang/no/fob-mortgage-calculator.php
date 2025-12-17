@@ -39,7 +39,9 @@ return [
         'form_size' => 'Skjemastørrelse',
         'form_alignment' => 'Skjemajustering',
         'form_margin' => 'Skjemamarginer',
+        'form_margin_helper' => 'Plass utenfor skjemaet (f.eks. 20px, 1rem, 20px 0)',
         'form_padding' => 'Skjemapolstring',
+        'form_padding_helper' => 'Plass innenfor skjemaet (f.eks. 20px, 1rem, 30px 20px)',
         'form_title' => 'Skjematittel',
         'form_description' => 'Skjemabeskrivelse',
         'default_price' => 'Standard Eiendomspris',
@@ -87,14 +89,6 @@ return [
         'start' => 'Venstre (Start)',
         'center' => 'Senter',
         'end' => 'Høyre (Slutt)',
-    ],
-
-    'spacing' => [
-        'none' => 'Ingen',
-        'sm' => 'Liten',
-        'default' => 'Standard',
-        'lg' => 'Stor',
-        'xl' => 'Ekstra Stor',
     ],
 
     'price_from' => [

@@ -39,7 +39,9 @@ return [
         'form_size' => 'Tamaño del Formulario',
         'form_alignment' => 'Alineación del Formulario',
         'form_margin' => 'Margen del Formulario',
+        'form_margin_helper' => 'Espacio exterior del formulario (ej: 20px, 1rem, 20px 0)',
         'form_padding' => 'Relleno del Formulario',
+        'form_padding_helper' => 'Espacio interior del formulario (ej: 20px, 1rem, 30px 20px)',
         'form_title' => 'Título del Formulario',
         'form_description' => 'Descripción del Formulario',
         'default_price' => 'Precio de Propiedad Predeterminado',
@@ -87,14 +89,6 @@ return [
         'start' => 'Izquierda (Inicio)',
         'center' => 'Centro',
         'end' => 'Derecha (Fin)',
-    ],
-
-    'spacing' => [
-        'none' => 'Ninguno',
-        'sm' => 'Pequeño',
-        'default' => 'Predeterminado',
-        'lg' => 'Grande',
-        'xl' => 'Extra Grande',
     ],
 
     'price_from' => [

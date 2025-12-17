@@ -39,7 +39,9 @@ return [
         'form_size' => 'Űrlap méret',
         'form_alignment' => 'Űrlap igazítás',
         'form_margin' => 'Űrlap margó',
+        'form_margin_helper' => 'Hely az űrlapon kívül (pl. 20px, 1rem, 20px 0)',
         'form_padding' => 'Űrlap belső térköz',
+        'form_padding_helper' => 'Hely az űrlapon belül (pl. 20px, 1rem, 30px 20px)',
         'form_title' => 'Űrlap cím',
         'form_description' => 'Űrlap leírás',
         'default_price' => 'Alapértelmezett ingatlanár',
@@ -87,14 +89,6 @@ return [
         'start' => 'Balra (Kezdet)',
         'center' => 'Középre',
         'end' => 'Jobbra (Vég)',
-    ],
-
-    'spacing' => [
-        'none' => 'Nincs',
-        'sm' => 'Kicsi',
-        'default' => 'Alapértelmezett',
-        'lg' => 'Nagy',
-        'xl' => 'Extra nagy',
     ],
 
     'price_from' => [

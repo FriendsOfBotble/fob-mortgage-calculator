@@ -39,7 +39,9 @@ return [
         'form_size' => 'Laki ng Form',
         'form_alignment' => 'Alignment ng Form',
         'form_margin' => 'Margin ng Form',
+        'form_margin_helper' => 'Espasyo sa labas ng form (hal: 20px, 1rem, 20px 0)',
         'form_padding' => 'Padding ng Form',
+        'form_padding_helper' => 'Espasyo sa loob ng form (hal: 20px, 1rem, 30px 20px)',
         'form_title' => 'Pamagat ng Form',
         'form_description' => 'Paglalarawan ng Form',
         'default_price' => 'Default na presyo ng property',
@@ -87,14 +89,6 @@ return [
         'start' => 'Kaliwa (Simula)',
         'center' => 'Gitna',
         'end' => 'Kanan (Dulo)',
-    ],
-
-    'spacing' => [
-        'none' => 'Wala',
-        'sm' => 'Maliit',
-        'default' => 'Default',
-        'lg' => 'Malaki',
-        'xl' => 'Napakalalaki',
     ],
 
     'price_from' => [

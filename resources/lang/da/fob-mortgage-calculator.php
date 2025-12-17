@@ -39,7 +39,9 @@ return [
         'form_size' => 'Formularstørrelse',
         'form_alignment' => 'Formularjustering',
         'form_margin' => 'Formularmargen',
+        'form_margin_helper' => 'Plads udenfor formularen (f.eks. 20px, 1rem, 20px 0)',
         'form_padding' => 'Formularpolstring',
+        'form_padding_helper' => 'Plads indenfor formularen (f.eks. 20px, 1rem, 30px 20px)',
         'form_title' => 'Formulartitel',
         'form_description' => 'Formularbeskrivelse',
         'default_price' => 'Standard Ejendomspris',
@@ -87,14 +89,6 @@ return [
         'start' => 'Venstre (Start)',
         'center' => 'Center',
         'end' => 'Højre (Slut)',
-    ],
-
-    'spacing' => [
-        'none' => 'Ingen',
-        'sm' => 'Lille',
-        'default' => 'Standard',
-        'lg' => 'Stor',
-        'xl' => 'Ekstra Stor',
     ],
 
     'price_from' => [

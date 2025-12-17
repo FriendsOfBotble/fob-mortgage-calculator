@@ -39,7 +39,9 @@ return [
         'form_size' => 'Velikost formuláře',
         'form_alignment' => 'Zarovnání formuláře',
         'form_margin' => 'Okraj formuláře',
+        'form_margin_helper' => 'Prostor vně formuláře (např. 20px, 1rem, 20px 0)',
         'form_padding' => 'Vnitřní okraj formuláře',
+        'form_padding_helper' => 'Prostor uvnitř formuláře (např. 20px, 1rem, 30px 20px)',
         'form_title' => 'Název formuláře',
         'form_description' => 'Popis formuláře',
         'default_price' => 'Výchozí cena nemovitosti',
@@ -87,14 +89,6 @@ return [
         'start' => 'Vlevo (Začátek)',
         'center' => 'Na střed',
         'end' => 'Vpravo (Konec)',
-    ],
-
-    'spacing' => [
-        'none' => 'Žádný',
-        'sm' => 'Malý',
-        'default' => 'Výchozí',
-        'lg' => 'Velký',
-        'xl' => 'Extra velký',
     ],
 
     'price_from' => [

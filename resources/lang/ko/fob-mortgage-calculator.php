@@ -39,7 +39,9 @@ return [
         'form_size' => '양식 크기',
         'form_alignment' => '양식 정렬',
         'form_margin' => '양식 여백',
+        'form_margin_helper' => '양식 외부 간격 (예: 20px, 1rem, 20px 0)',
         'form_padding' => '양식 패딩',
+        'form_padding_helper' => '양식 내부 간격 (예: 20px, 1rem, 30px 20px)',
         'form_title' => '양식 제목',
         'form_description' => '양식 설명',
         'default_price' => '기본 부동산 가격',
@@ -87,14 +89,6 @@ return [
         'start' => '왼쪽 (시작)',
         'center' => '중앙',
         'end' => '오른쪽 (끝)',
-    ],
-
-    'spacing' => [
-        'none' => '없음',
-        'sm' => '작게',
-        'default' => '기본',
-        'lg' => '크게',
-        'xl' => '매우 크게',
     ],
 
     'price_from' => [
