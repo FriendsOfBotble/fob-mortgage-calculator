@@ -1,4 +1,6 @@
+@once
 <link rel="stylesheet" href="{{ asset('vendor/core/plugins/fob-mortgage-calculator/css/mortgage-calculator.css') }}">
+@endonce
 
 @php
     $isRtl = BaseHelper::isRtlEnabled();
@@ -21,15 +23,16 @@
         $wrapperClasses[] = 'mortgage-calculator--style-' . $formStyle;
     }
 
-    if ($formMargin !== 'default') {
-        $wrapperClasses[] = 'mortgage-calculator--margin-' . $formMargin;
-    }
-
-    if ($formPadding !== 'default') {
-        $wrapperClasses[] = 'mortgage-calculator--padding-' . $formPadding;
-    }
-
     $wrapperClass = implode(' ', $wrapperClasses);
+
+    $inlineStyles = ['--mc-primary: ' . $primaryColor];
+    if (!empty($formMargin)) {
+        $inlineStyles[] = 'margin: ' . e($formMargin);
+    }
+    if (!empty($formPadding)) {
+        $inlineStyles[] = 'padding: ' . e($formPadding);
+    }
+    $inlineStyle = implode('; ', $inlineStyles);
 
     $containerClasses = ['mortgage-calculator-container'];
 
@@ -44,8 +47,6 @@
         $containerClasses[] = 'mortgage-calculator-container--align-' . $formAlignment;
     }
     $containerClass = implode(' ', $containerClasses);
-
-    $primaryColor = $primaryColor ?? '#e31837';
 @endphp
 
 <div class="widget widget-mortgage-calculator">
@@ -54,7 +55,7 @@
     @endif
 
     <div class="{{ $containerClass }}">
-    <div class="{{ $wrapperClass }}" id="{{ $uniqueId }}" data-calculator style="--mc-primary: {{ $primaryColor }}">
+    <div class="{{ $wrapperClass }}" id="{{ $uniqueId }}" data-calculator style="{{ $inlineStyle }}">
         @if($formTitle || $formDescription)
         <div class="mortgage-calculator__header">
             @if($formTitle)
@@ -311,21 +312,23 @@
 
 <script>
     window.mortgageCalculatorConfig = window.mortgageCalculatorConfig || {};
-    window.mortgageCalculatorConfig['{{ $uniqueId }}'] = {
-        currency: '{{ $currency }}',
-        primaryColor: '{{ $primaryColor }}',
-        showExtraCosts: {{ $showExtraCosts ? 'true' : 'false' }},
-        defaultDownPaymentType: '{{ $defaultDownPaymentType }}',
-        defaultDownPaymentValue: {{ $defaultDownPaymentValue }},
-        translations: {
-            percentHelp: '{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.help.down_payment_percent') }}',
-            amountHelp: '{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.help.down_payment_amount') }}',
-            principal: '{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.amortization.principal') }}',
-            interest: '{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.amortization.interest') }}',
-            year: '{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.amortization.year') }}',
-            period: '{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.amortization.period') }}'
-        }
-    };
+    window.mortgageCalculatorConfig[{!! json_encode($uniqueId) !!}] = {!! json_encode([
+        'currency' => $currency,
+        'primaryColor' => $primaryColor,
+        'showExtraCosts' => $showExtraCosts,
+        'defaultDownPaymentType' => $defaultDownPaymentType,
+        'defaultDownPaymentValue' => $defaultDownPaymentValue,
+        'translations' => [
+            'percentHelp' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.help.down_payment_percent'),
+            'amountHelp' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.help.down_payment_amount'),
+            'principal' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.amortization.principal'),
+            'interest' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.amortization.interest'),
+            'year' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.amortization.year'),
+            'period' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.amortization.period'),
+        ],
+    ]) !!};
 </script>
 
+@once
 <script src="{{ asset('vendor/core/plugins/fob-mortgage-calculator/js/mortgage-calculator.js') }}"></script>
+@endonce

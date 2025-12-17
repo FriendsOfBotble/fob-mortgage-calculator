@@ -1,5 +1,5 @@
 /**
- * FOB Mortgage Calculator - Techcombank Style
+ * FOB Mortgage Calculator
  * Vanilla JS mortgage calculator for Botble CMS
  */
 (function() {
@@ -19,7 +19,6 @@
             this.defaultDownPaymentValue = this.config.defaultDownPaymentValue || 20;
 
             this.form = element.querySelector('form');
-            this.resultsContainer = element.querySelector('[data-results]');
             this.errorContainer = element.querySelector('[data-error]');
             this.modal = element.querySelector('[data-modal]');
 
@@ -48,7 +47,6 @@
             const priceInput = this.element.querySelector('[name="property_price"]');
             if (!priceInput || !priceInput.hasAttribute('data-price-from')) return;
 
-            // Try to get price from property page (real estate detail page)
             const propertyPrice = document.querySelector('[data-property-price]')?.dataset.propertyPrice;
             if (propertyPrice && !isNaN(parseFloat(propertyPrice))) {
                 priceInput.value = this.formatNumber(parseFloat(propertyPrice));
@@ -64,7 +62,6 @@
 
             const propertyPrice = this.parseNumber(priceInput.value);
             if (propertyPrice > 0) {
-                // Calculate percentage from fixed down payment amount
                 const downPaymentPercent = (this.defaultDownPaymentValue / propertyPrice) * 100;
                 const loanPercent = Math.max(0, Math.min(100, 100 - downPaymentPercent));
                 slider.value = loanPercent;
@@ -79,13 +76,11 @@
         }
 
         attachEventListeners() {
-            // Calculation inputs
             const inputs = this.element.querySelectorAll('[data-calculate]');
             inputs.forEach(input => {
-                input.addEventListener('input', (e) => {
+                input.addEventListener('input', () => {
                     this.hasUserInteracted = true;
 
-                    // Handle slider
                     if (input.type === 'range') {
                         this.syncLoanAmountFromSlider();
                     }
@@ -98,7 +93,6 @@
                 });
             });
 
-            // Loan amount input sync with slider
             const loanAmountInput = this.element.querySelector('[name="loan_amount"]');
             if (loanAmountInput) {
                 loanAmountInput.addEventListener('input', () => {
@@ -108,7 +102,6 @@
                 });
             }
 
-            // Property price input sync with loan amount
             const propertyPriceInput = this.element.querySelector('[name="property_price"]');
             if (propertyPriceInput) {
                 propertyPriceInput.addEventListener('input', () => {
@@ -118,31 +111,26 @@
                 });
             }
 
-            // Calculation method tabs
             const methodTabs = this.element.querySelectorAll('[data-method]');
             methodTabs.forEach(tab => {
                 tab.addEventListener('click', () => this.switchCalculationMethod(tab));
             });
 
-            // View details button - opens modal
             const detailsBtn = this.element.querySelector('[data-toggle-details]');
             if (detailsBtn) {
                 detailsBtn.addEventListener('click', () => this.openModal());
             }
 
-            // Modal close buttons
             const closeButtons = this.element.querySelectorAll('[data-modal-close]');
             closeButtons.forEach(btn => {
                 btn.addEventListener('click', () => this.closeModal());
             });
 
-            // Modal view tabs (chart/table)
             const viewTabs = this.element.querySelectorAll('[data-view]');
             viewTabs.forEach(tab => {
                 tab.addEventListener('click', () => this.switchModalView(tab));
             });
 
-            // Close modal on escape key
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape' && this.modal && this.modal.classList.contains('is-open')) {
                     this.closeModal();
@@ -153,7 +141,6 @@
         initNumberFormatting() {
             const inputs = this.element.querySelectorAll('[data-format-number]');
             inputs.forEach(input => {
-                // Format initial value
                 if (input.value) {
                     const numValue = this.parseNumber(input.value);
                     if (numValue > 0) {
@@ -161,7 +148,6 @@
                     }
                 }
 
-                // Format on input
                 input.addEventListener('input', (e) => {
                     const cursorPos = e.target.selectionStart;
                     const oldLength = e.target.value.length;
@@ -171,13 +157,11 @@
                         e.target.value = rawValue > 0 ? this.formatNumber(rawValue) : '';
                     }
 
-                    // Adjust cursor position
                     const newLength = e.target.value.length;
                     const diff = newLength - oldLength;
                     e.target.setSelectionRange(cursorPos + diff, cursorPos + diff);
                 });
 
-                // Select all on focus
                 input.addEventListener('focus', (e) => {
                     setTimeout(() => e.target.select(), 0);
                 });
@@ -330,8 +314,8 @@
             const annualRate = this.getValue('interest_rate');
             const monthlyRate = annualRate / 100 / 12;
 
-            let monthlyMin = 0;
-            let monthlyMax = 0;
+            let monthlyMin;
+            let monthlyMax;
 
             if (this.calculationMethod === 'decreasing') {
                 this.schedule = this.calculateDecreasingBalance(this.loanAmount, monthlyRate, months);
@@ -344,20 +328,17 @@
 
             this.totalInterest = this.schedule.reduce((sum, row) => sum + row.interest, 0);
 
-            // Update results panel based on method
             const rangeContainer = this.element.querySelector('[data-result-range]');
             const singleContainer = this.element.querySelector('[data-result-single]');
 
             const detailsBtn = this.element.querySelector('[data-toggle-details]');
 
             if (this.calculationMethod === 'fixed') {
-                // Fixed payment: show single value, hide details button
                 if (rangeContainer) rangeContainer.style.display = 'none';
                 if (singleContainer) singleContainer.style.display = 'block';
                 if (detailsBtn) detailsBtn.style.display = 'none';
                 this.updateResultText('monthly-fixed', monthlyMin);
             } else {
-                // Decreasing balance: show range and details button
                 if (rangeContainer) rangeContainer.style.display = 'flex';
                 if (singleContainer) singleContainer.style.display = 'none';
                 if (detailsBtn) detailsBtn.style.display = 'inline-flex';
@@ -422,19 +403,15 @@
         openModal() {
             if (!this.modal || this.schedule.length === 0) return;
 
-            // Update modal stats
             this.updateStat('loan-amount', this.loanAmount);
             this.updateStat('total-interest', this.totalInterest);
             this.updateStat('total-paid', this.loanAmount + this.totalInterest);
 
-            // Update table
             this.updateScheduleTable(this.schedule);
 
-            // Show modal using class
             this.modal.classList.add('is-open');
             document.body.style.overflow = 'hidden';
 
-            // Render chart after modal is visible
             setTimeout(() => this.renderChart(), 100);
         }
 
@@ -448,13 +425,11 @@
         switchModalView(tab) {
             const view = tab.dataset.view;
 
-            // Update tab styles
             const tabs = this.element.querySelectorAll('[data-view]');
             tabs.forEach(t => {
                 t.classList.toggle('mortgage-calculator__modal-tab--active', t.dataset.view === view);
             });
 
-            // Show/hide containers
             const chartContainer = this.element.querySelector('[data-chart-container]');
             const tableContainer = this.element.querySelector('[data-table-container]');
 
@@ -465,7 +440,6 @@
                 tableContainer.style.display = view === 'table' ? 'block' : 'none';
             }
 
-            // Render chart if switching to chart view
             if (view === 'chart') {
                 setTimeout(() => this.renderChart(), 100);
             }
@@ -497,7 +471,6 @@
             const canvas = this.element.querySelector('[data-chart-canvas]');
             if (!canvas || this.schedule.length === 0) return;
 
-            // Load Chart.js if not available
             if (typeof Chart === 'undefined') {
                 this.loadChartJS().then(() => this.createChart(canvas));
                 return;
@@ -526,7 +499,6 @@
                 this.chart.destroy();
             }
 
-            // Group by year for better visualization
             const yearlyData = this.groupByYear(this.schedule);
 
             const ctx = canvas.getContext('2d');
@@ -664,14 +636,12 @@
         });
     }
 
-    // Initialize on DOM ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initCalculators);
     } else {
         initCalculators();
     }
 
-    // Export for external use
     window.initMortgageCalculators = initCalculators;
     window.MortgageCalculator = MortgageCalculator;
 })();

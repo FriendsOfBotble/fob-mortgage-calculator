@@ -26,6 +26,20 @@ This is a plugin for Botble CMS that adds a mortgage payment calculator to your 
 - RTL and accessibility support
 - Multi-language support
 
+## Screenshots
+
+### Decreasing Balance Mode
+![Decreasing Balance Calculator](art/1.png)
+
+### Fixed Payment Mode
+![Fixed Payment Calculator](art/2.png)
+
+### Amortization Schedule - Chart View
+![Amortization Schedule Chart](art/3.png)
+
+### Amortization Schedule - Table View
+![Amortization Schedule Table](art/4.png)
+
 ## Usage
 
 ### Shortcode

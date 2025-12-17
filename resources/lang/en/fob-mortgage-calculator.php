@@ -39,7 +39,9 @@ return [
         'form_size' => 'Form Size',
         'form_alignment' => 'Form Alignment',
         'form_margin' => 'Form Margin',
+        'form_margin_helper' => 'Space outside the form (e.g., 20px, 1rem, 20px 0)',
         'form_padding' => 'Form Padding',
+        'form_padding_helper' => 'Space inside the form (e.g., 20px, 1rem, 30px 20px)',
         'form_title' => 'Form Title',
         'form_description' => 'Form Description',
         'default_price' => 'Default Property Price',
@@ -87,14 +89,6 @@ return [
         'start' => 'Left (Start)',
         'center' => 'Center',
         'end' => 'Right (End)',
-    ],
-
-    'spacing' => [
-        'none' => 'None',
-        'sm' => 'Small',
-        'default' => 'Default',
-        'lg' => 'Large',
-        'xl' => 'Extra Large',
     ],
 
     'price_from' => [

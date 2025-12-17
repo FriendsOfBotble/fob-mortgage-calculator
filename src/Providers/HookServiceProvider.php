@@ -21,18 +21,18 @@ class HookServiceProvider extends ServiceProvider
         }
 
         add_shortcode(
-            'mortgage_calculator',
+            'mortgage-calculator',
             trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.name'),
             trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.description'),
             [app(MortgageCalculatorShortcode::class), 'render']
         );
 
         shortcode()->setAdminConfig(
-            'mortgage_calculator',
+            'mortgage-calculator',
             [app(MortgageCalculatorShortcode::class), 'adminConfig']
         );
 
-        shortcode()->ignoreLazyLoading(['mortgage_calculator']);
+        shortcode()->ignoreLazyLoading(['mortgage-calculator']);
     }
 
     protected function registerWidget(): void
