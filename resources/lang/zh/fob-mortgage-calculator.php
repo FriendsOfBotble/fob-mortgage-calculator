@@ -124,6 +124,8 @@ return [
         'from' => '从',
         'to' => '到',
         'view_details' => '查看详情',
+        'empty_state_title' => '计算您的抵押贷款',
+        'empty_state_message' => '在上方输入您的房产价格和贷款详情以查看估计的月供和总利息。',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => '小部件标题',
         'leave_empty_for_default' => '留空使用全局设置',
         'use_default' => '使用默认',
+    ],
+
+    'errors' => [
+        'property_price_required' => '房产价格必须大于0',
+        'loan_amount_required' => '贷款金额必须大于0',
+        'loan_amount_exceeds_price' => '贷款金额不能超过房产价格',
+        'loan_term_required' => '贷款期限必须大于0',
+        'interest_rate_negative' => '利率不能为负数',
     ],
 ];

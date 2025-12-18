@@ -124,6 +124,8 @@ return [
         'from' => 'Desde',
         'to' => 'Hasta',
         'view_details' => 'Ver Detalles',
+        'empty_state_title' => 'Calcula Tu Hipoteca',
+        'empty_state_message' => 'Ingresa el precio de tu propiedad y los detalles del préstamo arriba para ver los pagos mensuales estimados y el interés total.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Título del Widget',
         'leave_empty_for_default' => 'Dejar vacío para usar la configuración global',
         'use_default' => 'Usar Predeterminado',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'El precio de la propiedad debe ser mayor que 0',
+        'loan_amount_required' => 'El monto del préstamo debe ser mayor que 0',
+        'loan_amount_exceeds_price' => 'El monto del préstamo no puede exceder el precio de la propiedad',
+        'loan_term_required' => 'El plazo del préstamo debe ser mayor que 0',
+        'interest_rate_negative' => 'La tasa de interés no puede ser negativa',
     ],
 ];

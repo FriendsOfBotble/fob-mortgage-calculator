@@ -124,6 +124,8 @@ return [
         'from' => 'De',
         'to' => 'À',
         'view_details' => 'Voir les Détails',
+        'empty_state_title' => 'Calculez Votre Prêt Hypothécaire',
+        'empty_state_message' => 'Entrez le prix de votre propriété et les détails du prêt ci-dessus pour voir les paiements mensuels estimés et les intérêts totaux.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Titre du Widget',
         'leave_empty_for_default' => 'Laisser vide pour utiliser les paramètres globaux',
         'use_default' => 'Utiliser par Défaut',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Le prix de la propriété doit être supérieur à 0',
+        'loan_amount_required' => 'Le montant du prêt doit être supérieur à 0',
+        'loan_amount_exceeds_price' => 'Le montant du prêt ne peut pas dépasser le prix de la propriété',
+        'loan_term_required' => 'La durée du prêt doit être supérieure à 0',
+        'interest_rate_negative' => 'Le taux d\'intérêt ne peut pas être négatif',
     ],
 ];

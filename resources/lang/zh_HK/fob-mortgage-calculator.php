@@ -124,6 +124,8 @@ return [
         'from' => '從',
         'to' => '至',
         'view_details' => '查看詳情',
+        'empty_state_title' => '計算您的按揭貸款',
+        'empty_state_message' => '在上方輸入您的物業價格和貸款詳情以查看估計的月供和總利息。',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => '小工具標題',
         'leave_empty_for_default' => '留空以使用全域設定',
         'use_default' => '使用預設',
+    ],
+
+    'errors' => [
+        'property_price_required' => '物業價格必須大於0',
+        'loan_amount_required' => '貸款金額必須大於0',
+        'loan_amount_exceeds_price' => '貸款金額不能超過物業價格',
+        'loan_term_required' => '貸款期限必須大於0',
+        'interest_rate_negative' => '利率不能為負數',
     ],
 ];

@@ -124,6 +124,8 @@ return [
         'from' => 'No',
         'to' => 'Līdz',
         'view_details' => 'Skatīt Detaļas',
+        'empty_state_title' => 'Aprēķiniet Savu Hipotēku',
+        'empty_state_message' => 'Ievadiet īpašuma cenu un aizdevuma informāciju augstāk, lai redzētu prognozētos ikmēneša maksājumus un kopējās procentus.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Logrīka Nosaukums',
         'leave_empty_for_default' => 'Atstājiet tukšu, lai izmantotu globālos iestatījumus',
         'use_default' => 'Lietot Noklusējumu',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Īpašuma cenai jābūt lielākai par 0',
+        'loan_amount_required' => 'Aizdevuma summai jābūt lielākai par 0',
+        'loan_amount_exceeds_price' => 'Aizdevuma summa nedrīkst pārsniegt īpašuma cenu',
+        'loan_term_required' => 'Aizdevuma termiņam jābūt lielākam par 0',
+        'interest_rate_negative' => 'Procentu likme nevar būt negatīva',
     ],
 ];

@@ -124,6 +124,8 @@ return [
         'from' => 'Dari',
         'to' => 'Ke',
         'view_details' => 'Lihat Butiran',
+        'empty_state_title' => 'Kira Gadai Janji Anda',
+        'empty_state_message' => 'Masukkan harga hartanah dan butiran pinjaman anda di atas untuk melihat anggaran bayaran bulanan dan jumlah faedah.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Tajuk Widget',
         'leave_empty_for_default' => 'Biarkan kosong untuk menggunakan tetapan global',
         'use_default' => 'Guna Lalai',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Harga hartanah mestilah lebih besar daripada 0',
+        'loan_amount_required' => 'Jumlah pinjaman mestilah lebih besar daripada 0',
+        'loan_amount_exceeds_price' => 'Jumlah pinjaman tidak boleh melebihi harga hartanah',
+        'loan_term_required' => 'Tempoh pinjaman mestilah lebih besar daripada 0',
+        'interest_rate_negative' => 'Kadar faedah tidak boleh negatif',
     ],
 ];

@@ -124,6 +124,8 @@ return [
         'from' => 'Od',
         'to' => 'Do',
         'view_details' => 'Zobacz szczegóły',
+        'empty_state_title' => 'Oblicz Swój Kredyt Hipoteczny',
+        'empty_state_message' => 'Wprowadź cenę nieruchomości i szczegóły kredytu powyżej, aby zobaczyć szacunkowe miesięczne płatności i całkowite odsetki.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Tytuł widżetu',
         'leave_empty_for_default' => 'Pozostaw puste, aby użyć ustawień globalnych',
         'use_default' => 'Użyj domyślnych',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Cena nieruchomości musi być większa niż 0',
+        'loan_amount_required' => 'Kwota kredytu musi być większa niż 0',
+        'loan_amount_exceeds_price' => 'Kwota kredytu nie może przekroczyć ceny nieruchomości',
+        'loan_term_required' => 'Okres kredytowania musi być większy niż 0',
+        'interest_rate_negative' => 'Oprocentowanie nie może być ujemne',
     ],
 ];

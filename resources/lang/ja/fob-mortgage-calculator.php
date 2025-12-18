@@ -124,6 +124,8 @@ return [
         'from' => 'から',
         'to' => 'まで',
         'view_details' => '詳細を表示',
+        'empty_state_title' => '住宅ローンを計算',
+        'empty_state_message' => '上記で不動産価格とローン詳細を入力して、推定月額支払額と総利息を確認してください。',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'ウィジェットタイトル',
         'leave_empty_for_default' => 'グローバル設定を使用するには空白のままにする',
         'use_default' => 'デフォルトを使用',
+    ],
+
+    'errors' => [
+        'property_price_required' => '不動産価格は0より大きくなければなりません',
+        'loan_amount_required' => 'ローン金額は0より大きくなければなりません',
+        'loan_amount_exceeds_price' => 'ローン金額は不動産価格を超えることはできません',
+        'loan_term_required' => 'ローン期間は0より大きくなければなりません',
+        'interest_rate_negative' => '金利はマイナスにできません',
     ],
 ];

@@ -124,6 +124,8 @@ return [
         'from' => 'Től',
         'to' => 'Ig',
         'view_details' => 'Részletek megtekintése',
+        'empty_state_title' => 'Számítsa Ki Jelzáloghitelét',
+        'empty_state_message' => 'Adja meg a tulajdon árát és a hitel részleteit fent, hogy lássa a becsült havi kifizetéseket és a teljes kamatot.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Widget cím',
         'leave_empty_for_default' => 'Hagyja üresen a globális beállítások használatához',
         'use_default' => 'Alapértelmezett használata',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Az ingatlan árának nagyobbnak kell lennie 0-nál',
+        'loan_amount_required' => 'A hitelösszegnek nagyobbnak kell lennie 0-nál',
+        'loan_amount_exceeds_price' => 'A hitelösszeg nem haladhatja meg az ingatlan árát',
+        'loan_term_required' => 'A hitel futamidejének nagyobbnak kell lennie 0-nál',
+        'interest_rate_negative' => 'A kamatláb nem lehet negatív',
     ],
 ];

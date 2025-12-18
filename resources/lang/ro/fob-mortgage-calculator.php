@@ -124,6 +124,8 @@ return [
         'from' => 'De la',
         'to' => 'La',
         'view_details' => 'Vizualizare detalii',
+        'empty_state_title' => 'Calculați-vă Ipoteca',
+        'empty_state_message' => 'Introduceți prețul proprietății și detaliile împrumutului mai sus pentru a vedea plățile lunare estimate și dobânda totală.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Titlu widget',
         'leave_empty_for_default' => 'Lăsați gol pentru a utiliza setările globale',
         'use_default' => 'Utilizare implicit',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Prețul proprietății trebuie să fie mai mare de 0',
+        'loan_amount_required' => 'Suma împrumutului trebuie să fie mai mare de 0',
+        'loan_amount_exceeds_price' => 'Suma împrumutului nu poate depăși prețul proprietății',
+        'loan_term_required' => 'Durata împrumutului trebuie să fie mai mare de 0',
+        'interest_rate_negative' => 'Rata dobânzii nu poate fi negativă',
     ],
 ];

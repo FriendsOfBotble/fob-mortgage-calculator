@@ -124,6 +124,8 @@ return [
         'from' => 'De',
         'to' => 'Até',
         'view_details' => 'Ver Detalhes',
+        'empty_state_title' => 'Calcule Sua Hipoteca',
+        'empty_state_message' => 'Insira o preço do imóvel e os detalhes do empréstimo acima para ver os pagamentos mensais estimados e os juros totais.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Título do Widget',
         'leave_empty_for_default' => 'Deixe vazio para usar as configurações globais',
         'use_default' => 'Usar Padrão',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'O preço do imóvel deve ser maior que 0',
+        'loan_amount_required' => 'O valor do empréstimo deve ser maior que 0',
+        'loan_amount_exceeds_price' => 'O valor do empréstimo não pode exceder o preço do imóvel',
+        'loan_term_required' => 'O prazo do empréstimo deve ser maior que 0',
+        'interest_rate_negative' => 'A taxa de juros não pode ser negativa',
     ],
 ];

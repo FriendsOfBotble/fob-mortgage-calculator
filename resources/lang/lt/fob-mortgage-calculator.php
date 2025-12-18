@@ -124,6 +124,8 @@ return [
         'from' => 'Nuo',
         'to' => 'Iki',
         'view_details' => 'Žiūrėti Detales',
+        'empty_state_title' => 'Apskaičiuokite Savo Hipoteką',
+        'empty_state_message' => 'Įveskite turto kainą ir paskolos informaciją aukščiau, kad matytumėte numatomas mėnesines įmokas ir bendrą palūkanų sumą.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Valdiklio Pavadinimas',
         'leave_empty_for_default' => 'Palikite tuščią, kad naudotumėte globaliuosius nustatymus',
         'use_default' => 'Naudoti Numatytąjį',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Turto kaina turi būti didesnė nei 0',
+        'loan_amount_required' => 'Paskolos suma turi būti didesnė nei 0',
+        'loan_amount_exceeds_price' => 'Paskolos suma negali viršyti turto kainos',
+        'loan_term_required' => 'Paskolos terminas turi būti didesnis nei 0',
+        'interest_rate_negative' => 'Palūkanų norma negali būti neigiama',
     ],
 ];

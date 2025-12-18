@@ -124,6 +124,8 @@ return [
         'from' => '부터',
         'to' => '까지',
         'view_details' => '세부 정보 보기',
+        'empty_state_title' => '모기지 계산하기',
+        'empty_state_message' => '위에 부동산 가격과 대출 세부 정보를 입력하여 예상 월 납입금과 총 이자를 확인하세요.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => '위젯 제목',
         'leave_empty_for_default' => '전역 설정을 사용하려면 비워두세요',
         'use_default' => '기본값 사용',
+    ],
+
+    'errors' => [
+        'property_price_required' => '부동산 가격은 0보다 커야 합니다',
+        'loan_amount_required' => '대출 금액은 0보다 커야 합니다',
+        'loan_amount_exceeds_price' => '대출 금액은 부동산 가격을 초과할 수 없습니다',
+        'loan_term_required' => '대출 기간은 0보다 커야 합니다',
+        'interest_rate_negative' => '이자율은 음수일 수 없습니다',
     ],
 ];

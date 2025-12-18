@@ -124,6 +124,8 @@ return [
         'from' => 'Van',
         'to' => 'Tot',
         'view_details' => 'Bekijk Details',
+        'empty_state_title' => 'Bereken Uw Hypotheek',
+        'empty_state_message' => 'Voer hierboven uw woningprijs en leningdetails in om geschatte maandelijkse betalingen en totale rente te zien.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Widget Titel',
         'leave_empty_for_default' => 'Laat leeg om algemene instellingen te gebruiken',
         'use_default' => 'Gebruik Standaard',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'De woningprijs moet groter zijn dan 0',
+        'loan_amount_required' => 'Het leningbedrag moet groter zijn dan 0',
+        'loan_amount_exceeds_price' => 'Het leningbedrag mag de woningprijs niet overschrijden',
+        'loan_term_required' => 'De looptijd moet groter zijn dan 0',
+        'interest_rate_negative' => 'De rente kan niet negatief zijn',
     ],
 ];

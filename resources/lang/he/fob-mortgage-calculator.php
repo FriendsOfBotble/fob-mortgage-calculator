@@ -124,6 +124,8 @@ return [
         'from' => 'מ',
         'to' => 'עד',
         'view_details' => 'צפייה בפרטים',
+        'empty_state_title' => 'חשב את המשכנתא שלך',
+        'empty_state_message' => 'הזן את מחיר הנכס ופרטי ההלוואה למעלה כדי לראות את התשלומים החודשיים המשוערים והריבית הכוללת.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'כותרת וידג\'ט',
         'leave_empty_for_default' => 'השאירו ריק לשימוש בהגדרות גלובליות',
         'use_default' => 'שימוש בברירת מחדל',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'מחיר הנכס חייב להיות גדול מ-0',
+        'loan_amount_required' => 'סכום ההלוואה חייב להיות גדול מ-0',
+        'loan_amount_exceeds_price' => 'סכום ההלוואה לא יכול לעלות על מחיר הנכס',
+        'loan_term_required' => 'תקופת ההלוואה חייבת להיות גדולה מ-0',
+        'interest_rate_negative' => 'שיעור הריבית לא יכול להיות שלילי',
     ],
 ];

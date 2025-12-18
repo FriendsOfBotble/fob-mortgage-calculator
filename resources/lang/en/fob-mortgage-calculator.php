@@ -124,6 +124,8 @@ return [
         'from' => 'From',
         'to' => 'To',
         'view_details' => 'View Details',
+        'empty_state_title' => 'Calculate Your Mortgage',
+        'empty_state_message' => 'Enter your property price and loan details above to see estimated monthly payments and total interest.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Widget Title',
         'leave_empty_for_default' => 'Leave empty to use global settings',
         'use_default' => 'Use Default',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Property price must be greater than 0',
+        'loan_amount_required' => 'Loan amount must be greater than 0',
+        'loan_amount_exceeds_price' => 'Loan amount cannot exceed property price',
+        'loan_term_required' => 'Loan term must be greater than 0',
+        'interest_rate_negative' => 'Interest rate cannot be negative',
     ],
 ];

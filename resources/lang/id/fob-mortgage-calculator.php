@@ -124,6 +124,8 @@ return [
         'from' => 'Dari',
         'to' => 'Ke',
         'view_details' => 'Lihat Detail',
+        'empty_state_title' => 'Hitung Hipotek Anda',
+        'empty_state_message' => 'Masukkan harga properti dan detail pinjaman Anda di atas untuk melihat perkiraan pembayaran bulanan dan total bunga.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Judul Widget',
         'leave_empty_for_default' => 'Biarkan kosong untuk menggunakan pengaturan global',
         'use_default' => 'Gunakan Default',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Harga properti harus lebih besar dari 0',
+        'loan_amount_required' => 'Jumlah pinjaman harus lebih besar dari 0',
+        'loan_amount_exceeds_price' => 'Jumlah pinjaman tidak boleh melebihi harga properti',
+        'loan_term_required' => 'Jangka waktu pinjaman harus lebih besar dari 0',
+        'interest_rate_negative' => 'Suku bunga tidak boleh negatif',
     ],
 ];

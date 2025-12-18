@@ -211,33 +211,46 @@
             </div>
 
             <div class="mortgage-calculator__results-content">
-                <div class="mortgage-calculator__result-label">
-                    {{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.results.monthly_payment') }}
-                </div>
-                {{-- Range display for decreasing balance method --}}
-                <div class="mortgage-calculator__result-range" data-result-range>
-                    <div class="mortgage-calculator__result-item">
-                        <span class="mortgage-calculator__result-sub">{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.results.from') }}</span>
-                        <strong class="mortgage-calculator__result-value" data-result="monthly-min">0 {{ $currency }}</strong>
-                    </div>
-                    <div class="mortgage-calculator__result-item">
-                        <span class="mortgage-calculator__result-sub">{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.results.to') }}</span>
-                        <strong class="mortgage-calculator__result-value" data-result="monthly-max">0 {{ $currency }}</strong>
-                    </div>
-                </div>
-                {{-- Single display for fixed payment method --}}
-                <div class="mortgage-calculator__result-single" data-result-single style="display: none;">
-                    <strong class="mortgage-calculator__result-value mortgage-calculator__result-value--large" data-result="monthly-fixed">0 {{ $currency }}</strong>
+                {{-- Empty State --}}
+                <div class="mortgage-calculator__empty-state" data-empty-state>
+                    <h4 class="mortgage-calculator__empty-state-title">
+                        {{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.results.empty_state_title') }}
+                    </h4>
+                    <p class="mortgage-calculator__empty-state-message">
+                        {{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.results.empty_state_message') }}
+                    </p>
                 </div>
 
-                <div class="mortgage-calculator__result-total">
-                    <span class="mortgage-calculator__result-label">{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.results.total_interest') }}</span>
-                    <strong class="mortgage-calculator__result-value mortgage-calculator__result-value--large" data-result="total-interest">0 {{ $currency }}</strong>
-                </div>
+                {{-- Results Display --}}
+                <div class="mortgage-calculator__results-display" data-results-display style="display: none;">
+                    <div class="mortgage-calculator__result-label">
+                        {{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.results.monthly_payment') }}
+                    </div>
+                    {{-- Range display for decreasing balance method --}}
+                    <div class="mortgage-calculator__result-range" data-result-range>
+                        <div class="mortgage-calculator__result-item">
+                            <span class="mortgage-calculator__result-sub">{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.results.from') }}</span>
+                            <strong class="mortgage-calculator__result-value" data-result="monthly-min">0 {{ $currency }}</strong>
+                        </div>
+                        <div class="mortgage-calculator__result-item">
+                            <span class="mortgage-calculator__result-sub">{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.results.to') }}</span>
+                            <strong class="mortgage-calculator__result-value" data-result="monthly-max">0 {{ $currency }}</strong>
+                        </div>
+                    </div>
+                    {{-- Single display for fixed payment method --}}
+                    <div class="mortgage-calculator__result-single" data-result-single style="display: none;">
+                        <strong class="mortgage-calculator__result-value mortgage-calculator__result-value--large" data-result="monthly-fixed">0 {{ $currency }}</strong>
+                    </div>
 
-                <button type="button" class="mortgage-calculator__details-btn" data-toggle-details>
-                    {{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.results.view_details') }}
-                </button>
+                    <div class="mortgage-calculator__result-total">
+                        <span class="mortgage-calculator__result-label">{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.results.total_interest') }}</span>
+                        <strong class="mortgage-calculator__result-value mortgage-calculator__result-value--large" data-result="total-interest">0 {{ $currency }}</strong>
+                    </div>
+
+                    <button type="button" class="mortgage-calculator__details-btn" data-toggle-details>
+                        {{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.results.view_details') }}
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -320,6 +333,11 @@
             'interest' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.amortization.interest'),
             'year' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.amortization.year'),
             'period' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.amortization.period'),
+            'errorPropertyPrice' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.errors.property_price_required'),
+            'errorLoanAmount' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.errors.loan_amount_required'),
+            'errorLoanExceedsPrice' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.errors.loan_amount_exceeds_price'),
+            'errorLoanTerm' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.errors.loan_term_required'),
+            'errorInterestRate' => trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.errors.interest_rate_negative'),
         ],
     ]) !!};
 </script>

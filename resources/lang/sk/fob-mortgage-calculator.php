@@ -124,6 +124,8 @@ return [
         'from' => 'Od',
         'to' => 'Do',
         'view_details' => 'Zobraziť podrobnosti',
+        'empty_state_title' => 'Vypočítajte Si Hypotéku',
+        'empty_state_message' => 'Zadajte vyššie cenu nehnuteľnosti a podrobnosti o úvere, aby ste videli odhadované mesačné splátky a celkový úrok.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Názov widgetu',
         'leave_empty_for_default' => 'Nechajte prázdne pre použitie globálnych nastavení',
         'use_default' => 'Použiť predvolené',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Cena nehnuteľnosti musí byť väčšia ako 0',
+        'loan_amount_required' => 'Výška úveru musí byť väčšia ako 0',
+        'loan_amount_exceeds_price' => 'Výška úveru nemôže presiahnuť cenu nehnuteľnosti',
+        'loan_term_required' => 'Doba splácania musí byť väčšia ako 0',
+        'interest_rate_negative' => 'Úroková sadzba nemôže byť záporná',
     ],
 ];

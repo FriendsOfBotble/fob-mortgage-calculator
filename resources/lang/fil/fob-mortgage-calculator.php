@@ -124,6 +124,8 @@ return [
         'from' => 'Mula',
         'to' => 'Hanggang',
         'view_details' => 'Tingnan ang Detalye',
+        'empty_state_title' => 'Kalkulahin ang Iyong Mortgage',
+        'empty_state_message' => 'Ilagay ang presyo ng ari-arian at mga detalye ng pautang sa itaas upang makita ang tinantyang buwanang bayad at kabuuang interes.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Pamagat ng Widget',
         'leave_empty_for_default' => 'Iwanang blangko para gumamit ng global settings',
         'use_default' => 'Gamitin ang Default',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Ang presyo ng ari-arian ay dapat mas malaki sa 0',
+        'loan_amount_required' => 'Ang halaga ng pautang ay dapat mas malaki sa 0',
+        'loan_amount_exceeds_price' => 'Ang halaga ng pautang ay hindi maaaring lumampas sa presyo ng ari-arian',
+        'loan_term_required' => 'Ang termino ng pautang ay dapat mas malaki sa 0',
+        'interest_rate_negative' => 'Ang rate ng interes ay hindi maaaring negatibo',
     ],
 ];

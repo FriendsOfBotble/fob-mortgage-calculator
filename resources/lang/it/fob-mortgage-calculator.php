@@ -124,6 +124,8 @@ return [
         'from' => 'Da',
         'to' => 'A',
         'view_details' => 'Visualizza Dettagli',
+        'empty_state_title' => 'Calcola Il Tuo Mutuo',
+        'empty_state_message' => 'Inserisci il prezzo della proprietà e i dettagli del prestito sopra per vedere i pagamenti mensili stimati e gli interessi totali.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Titolo Widget',
         'leave_empty_for_default' => 'Lascia vuoto per usare le impostazioni globali',
         'use_default' => 'Usa Predefinito',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Il prezzo della proprietà deve essere maggiore di 0',
+        'loan_amount_required' => 'L\'importo del prestito deve essere maggiore di 0',
+        'loan_amount_exceeds_price' => 'L\'importo del prestito non può superare il prezzo della proprietà',
+        'loan_term_required' => 'La durata del prestito deve essere maggiore di 0',
+        'interest_rate_negative' => 'Il tasso di interesse non può essere negativo',
     ],
 ];

@@ -124,6 +124,8 @@ return [
         'from' => 'من',
         'to' => 'إلى',
         'view_details' => 'عرض التفاصيل',
+        'empty_state_title' => 'احسب الرهن العقاري الخاص بك',
+        'empty_state_message' => 'أدخل سعر العقار وتفاصيل القرض أعلاه لمشاهدة الدفعات الشهرية المقدرة وإجمالي الفائدة.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'عنوان الأداة',
         'leave_empty_for_default' => 'اتركه فارغاً لاستخدام الإعدادات العامة',
         'use_default' => 'استخدام الافتراضي',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'يجب أن يكون سعر العقار أكبر من 0',
+        'loan_amount_required' => 'يجب أن يكون مبلغ القرض أكبر من 0',
+        'loan_amount_exceeds_price' => 'لا يمكن أن يتجاوز مبلغ القرض سعر العقار',
+        'loan_term_required' => 'يجب أن تكون مدة القرض أكبر من 0',
+        'interest_rate_negative' => 'لا يمكن أن يكون معدل الفائدة سالباً',
     ],
 ];

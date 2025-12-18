@@ -124,6 +124,8 @@ return [
         'from' => 'Од',
         'to' => 'До',
         'view_details' => 'Прикажи детаље',
+        'empty_state_title' => 'Izračunajte Svoju Hipoteku',
+        'empty_state_message' => 'Unesite cenu nekretnine i detalje kredita gore kako biste videli procenjene mesečne uplate i ukupnu kamatu.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Наслов виџета',
         'leave_empty_for_default' => 'Оставите празно за коришћење глобалних поставки',
         'use_default' => 'Користи подразумевано',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Cena nekretnine mora biti veća od 0',
+        'loan_amount_required' => 'Iznos kredita mora biti veći od 0',
+        'loan_amount_exceeds_price' => 'Iznos kredita ne može preći cenu nekretnine',
+        'loan_term_required' => 'Rok kredita mora biti veći od 0',
+        'interest_rate_negative' => 'Kamatna stopa ne može biti negativna',
     ],
 ];

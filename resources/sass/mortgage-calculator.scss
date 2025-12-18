@@ -281,6 +281,29 @@ $mc-font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     width: 100%;
 }
 
+.mortgage-calculator__empty-state {
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.mortgage-calculator__empty-state-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 0.75rem 0;
+}
+
+.mortgage-calculator__empty-state-message {
+    font-size: 0.9375rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.mortgage-calculator__results-display {
+    width: 100%;
+}
+
 .mortgage-calculator__result-label {
     font-size: 0.9375rem;
     color: rgba(255, 255, 255, 0.8);

@@ -124,6 +124,8 @@ return [
         'from' => 'Alkaen',
         'to' => 'Asti',
         'view_details' => 'Näytä Tiedot',
+        'empty_state_title' => 'Laske Asuntolainasi',
+        'empty_state_message' => 'Syötä kiinteistön hinta ja lainan tiedot yllä nähdäksesi arvioidut kuukausimaksut ja kokonaiskorot.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Widgetin Otsikko',
         'leave_empty_for_default' => 'Jätä tyhjäksi käyttääksesi yleisiä asetuksia',
         'use_default' => 'Käytä Oletusta',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Kiinteistön hinnan on oltava suurempi kuin 0',
+        'loan_amount_required' => 'Lainasumman on oltava suurempi kuin 0',
+        'loan_amount_exceeds_price' => 'Lainasumma ei voi ylittää kiinteistön hintaa',
+        'loan_term_required' => 'Laina-ajan on oltava suurempi kuin 0',
+        'interest_rate_negative' => 'Korko ei voi olla negatiivinen',
     ],
 ];

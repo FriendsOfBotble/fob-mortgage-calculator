@@ -124,6 +124,8 @@ return [
         'from' => 'से',
         'to' => 'तक',
         'view_details' => 'विवरण देखें',
+        'empty_state_title' => 'अपने बंधक की गणना करें',
+        'empty_state_message' => 'अनुमानित मासिक भुगतान और कुल ब्याज देखने के लिए ऊपर अपनी संपत्ति मूल्य और ऋण विवरण दर्ज करें।',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'विजेट शीर्षक',
         'leave_empty_for_default' => 'वैश्विक सेटिंग्स का उपयोग करने के लिए खाली छोड़ें',
         'use_default' => 'डिफ़ॉल्ट का उपयोग करें',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'संपत्ति मूल्य 0 से अधिक होना चाहिए',
+        'loan_amount_required' => 'ऋण राशि 0 से अधिक होनी चाहिए',
+        'loan_amount_exceeds_price' => 'ऋण राशि संपत्ति मूल्य से अधिक नहीं हो सकती',
+        'loan_term_required' => 'ऋण अवधि 0 से अधिक होनी चाहिए',
+        'interest_rate_negative' => 'ब्याज दर नकारात्मक नहीं हो सकती',
     ],
 ];

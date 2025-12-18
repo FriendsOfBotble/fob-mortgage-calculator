@@ -124,6 +124,8 @@ return [
         'from' => 'Fra',
         'to' => 'Til',
         'view_details' => 'Se Detaljer',
+        'empty_state_title' => 'Beregn Dit Realkreditlån',
+        'empty_state_message' => 'Indtast din ejendomspris og lånedetaljer ovenfor for at se estimerede månedlige betalinger og samlet rente.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Widget Titel',
         'leave_empty_for_default' => 'Lad stå tomt for at bruge globale indstillinger',
         'use_default' => 'Brug Standard',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Ejendomsprisen skal være større end 0',
+        'loan_amount_required' => 'Lånebeløbet skal være større end 0',
+        'loan_amount_exceeds_price' => 'Lånebeløbet må ikke overstige ejendomsprisen',
+        'loan_term_required' => 'Låneperioden skal være større end 0',
+        'interest_rate_negative' => 'Renten kan ikke være negativ',
     ],
 ];

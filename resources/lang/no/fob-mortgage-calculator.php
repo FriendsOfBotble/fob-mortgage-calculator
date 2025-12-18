@@ -124,6 +124,8 @@ return [
         'from' => 'Fra',
         'to' => 'Til',
         'view_details' => 'Vis Detaljer',
+        'empty_state_title' => 'Beregn Boliglånet Ditt',
+        'empty_state_message' => 'Skriv inn eiendomsprisen og lånedetaljer ovenfor for å se estimerte månedlige betalinger og total rente.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Widget-tittel',
         'leave_empty_for_default' => 'La stå tomt for å bruke globale innstillinger',
         'use_default' => 'Bruk Standard',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Eiendomsprisen må være større enn 0',
+        'loan_amount_required' => 'Lånebeløpet må være større enn 0',
+        'loan_amount_exceeds_price' => 'Lånebeløpet kan ikke overskride eiendomsprisen',
+        'loan_term_required' => 'Låneperioden må være større enn 0',
+        'interest_rate_negative' => 'Renten kan ikke være negativ',
     ],
 ];

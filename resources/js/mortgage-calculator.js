@@ -274,23 +274,23 @@
             const interestRate = this.getValue('interest_rate');
 
             if (propertyPrice <= 0) {
-                errors.push('Property price must be greater than 0');
+                errors.push(this.translations.errorPropertyPrice || 'Property price must be greater than 0');
             }
 
             if (loanAmount <= 0) {
-                errors.push('Loan amount must be greater than 0');
+                errors.push(this.translations.errorLoanAmount || 'Loan amount must be greater than 0');
             }
 
             if (loanAmount > propertyPrice) {
-                errors.push('Loan amount cannot exceed property price');
+                errors.push(this.translations.errorLoanExceedsPrice || 'Loan amount cannot exceed property price');
             }
 
             if (loanTermMonths <= 0) {
-                errors.push('Loan term must be greater than 0');
+                errors.push(this.translations.errorLoanTerm || 'Loan term must be greater than 0');
             }
 
             if (interestRate < 0) {
-                errors.push('Interest rate cannot be negative');
+                errors.push(this.translations.errorInterestRate || 'Interest rate cannot be negative');
             }
 
             return errors;
@@ -303,11 +303,12 @@
                 if (this.hasUserInteracted) {
                     this.showError(errors[0]);
                 }
-                this.clearResults();
+                this.showEmptyState();
                 return;
             }
 
             this.hideError();
+            this.showResults();
 
             this.loanAmount = this.getValue('loan_amount');
             const months = this.getValue('loan_term_months');
@@ -601,6 +602,32 @@
             this.updateResultText('monthly-max', 0);
             this.updateResultText('monthly-fixed', 0);
             this.updateResultText('total-interest', 0);
+        }
+
+        showEmptyState() {
+            const emptyState = this.element.querySelector('[data-empty-state]');
+            const resultsDisplay = this.element.querySelector('[data-results-display]');
+
+            if (emptyState) {
+                emptyState.style.display = 'block';
+            }
+            if (resultsDisplay) {
+                resultsDisplay.style.display = 'none';
+            }
+
+            this.clearResults();
+        }
+
+        showResults() {
+            const emptyState = this.element.querySelector('[data-empty-state]');
+            const resultsDisplay = this.element.querySelector('[data-results-display]');
+
+            if (emptyState) {
+                emptyState.style.display = 'none';
+            }
+            if (resultsDisplay) {
+                resultsDisplay.style.display = 'block';
+            }
         }
 
         formatCurrency(value) {

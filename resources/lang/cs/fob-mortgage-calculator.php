@@ -124,6 +124,8 @@ return [
         'from' => 'Od',
         'to' => 'Do',
         'view_details' => 'Zobrazit podrobnosti',
+        'empty_state_title' => 'Vypočítejte Svou Hypotéku',
+        'empty_state_message' => 'Zadejte výše cenu nemovitosti a detaily půjčky, abyste viděli odhadované měsíční platby a celkový úrok.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Název widgetu',
         'leave_empty_for_default' => 'Nechte prázdné pro použití globálních nastavení',
         'use_default' => 'Použít výchozí',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Cena nemovitosti musí být větší než 0',
+        'loan_amount_required' => 'Výše půjčky musí být větší než 0',
+        'loan_amount_exceeds_price' => 'Výše půjčky nemůže překročit cenu nemovitosti',
+        'loan_term_required' => 'Doba splácení musí být větší než 0',
+        'interest_rate_negative' => 'Úroková sazba nemůže být záporná',
     ],
 ];

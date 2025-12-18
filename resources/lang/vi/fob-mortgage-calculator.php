@@ -124,6 +124,8 @@ return [
         'from' => 'Từ',
         'to' => 'Đến',
         'view_details' => 'Xem chi tiết',
+        'empty_state_title' => 'Tính Thế Chấp Của Bạn',
+        'empty_state_message' => 'Nhập giá bất động sản và thông tin khoản vay ở trên để xem khoản thanh toán hàng tháng ước tính và tổng lãi suất.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Tiêu đề widget',
         'leave_empty_for_default' => 'Để trống để sử dụng cài đặt chung',
         'use_default' => 'Sử dụng mặc định',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Giá bất động sản phải lớn hơn 0',
+        'loan_amount_required' => 'Số tiền vay phải lớn hơn 0',
+        'loan_amount_exceeds_price' => 'Số tiền vay không được vượt quá giá bất động sản',
+        'loan_term_required' => 'Thời hạn vay phải lớn hơn 0',
+        'interest_rate_negative' => 'Lãi suất không được âm',
     ],
 ];

@@ -124,6 +124,8 @@ return [
         'from' => 'Från',
         'to' => 'Till',
         'view_details' => 'Visa Detaljer',
+        'empty_state_title' => 'Beräkna Ditt Bolån',
+        'empty_state_message' => 'Ange ditt fastighetspris och lånedetaljer ovan för att se uppskattade månatliga betalningar och total ränta.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Widget-titel',
         'leave_empty_for_default' => 'Lämna tomt för att använda globala inställningar',
         'use_default' => 'Använd Standard',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Fastighetspriset måste vara större än 0',
+        'loan_amount_required' => 'Lånebeloppet måste vara större än 0',
+        'loan_amount_exceeds_price' => 'Lånebeloppet kan inte överstiga fastighetspriset',
+        'loan_term_required' => 'Lånetiden måste vara större än 0',
+        'interest_rate_negative' => 'Räntan kan inte vara negativ',
     ],
 ];

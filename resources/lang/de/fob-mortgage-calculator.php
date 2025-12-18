@@ -124,6 +124,8 @@ return [
         'from' => 'Von',
         'to' => 'Bis',
         'view_details' => 'Details anzeigen',
+        'empty_state_title' => 'Berechnen Sie Ihre Hypothek',
+        'empty_state_message' => 'Geben Sie oben Ihren Immobilienpreis und Kreditdetails ein, um geschätzte monatliche Zahlungen und Gesamtzinsen zu sehen.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Widget-Titel',
         'leave_empty_for_default' => 'Leer lassen, um globale Einstellungen zu verwenden',
         'use_default' => 'Standard verwenden',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Der Immobilienpreis muss größer als 0 sein',
+        'loan_amount_required' => 'Der Kreditbetrag muss größer als 0 sein',
+        'loan_amount_exceeds_price' => 'Der Kreditbetrag darf den Immobilienpreis nicht überschreiten',
+        'loan_term_required' => 'Die Kreditlaufzeit muss größer als 0 sein',
+        'interest_rate_negative' => 'Der Zinssatz kann nicht negativ sein',
     ],
 ];

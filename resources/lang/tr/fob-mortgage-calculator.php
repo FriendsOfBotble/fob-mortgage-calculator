@@ -124,6 +124,8 @@ return [
         'from' => 'Başlangıç',
         'to' => 'Bitiş',
         'view_details' => 'Detayları Görüntüle',
+        'empty_state_title' => 'İpoteğinizi Hesaplayın',
+        'empty_state_message' => 'Tahmini aylık ödemeleri ve toplam faizi görmek için yukarıya emlak fiyatınızı ve kredi detaylarınızı girin.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Widget Başlığı',
         'leave_empty_for_default' => 'Genel ayarları kullanmak için boş bırakın',
         'use_default' => 'Varsayılanı Kullan',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Emlak fiyatı 0\'dan büyük olmalıdır',
+        'loan_amount_required' => 'Kredi tutarı 0\'dan büyük olmalıdır',
+        'loan_amount_exceeds_price' => 'Kredi tutarı emlak fiyatını aşamaz',
+        'loan_term_required' => 'Kredi vadesi 0\'dan büyük olmalıdır',
+        'interest_rate_negative' => 'Faiz oranı negatif olamaz',
     ],
 ];

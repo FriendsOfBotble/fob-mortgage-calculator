@@ -124,6 +124,8 @@ return [
         'from' => 'Od',
         'to' => 'Do',
         'view_details' => 'Prikaži podrobnosti',
+        'empty_state_title' => 'Izračunajte Svojo Hipoteko',
+        'empty_state_message' => 'Zgoraj vnesite ceno nepremičnine in podrobnosti o posojilu, da si ogledate predvidene mesečne odplačila in skupne obresti.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Naslov gradnika',
         'leave_empty_for_default' => 'Pustite prazno za uporabo globalnih nastavitev',
         'use_default' => 'Uporabi privzeto',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Cena nepremičnine mora biti večja od 0',
+        'loan_amount_required' => 'Znesek posojila mora biti večji od 0',
+        'loan_amount_exceeds_price' => 'Znesek posojila ne sme presegati cene nepremičnine',
+        'loan_term_required' => 'Rok posojila mora biti večji od 0',
+        'interest_rate_negative' => 'Obrestna mera ne more biti negativna',
     ],
 ];

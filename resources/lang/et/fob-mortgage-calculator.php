@@ -124,6 +124,8 @@ return [
         'from' => 'Alates',
         'to' => 'Kuni',
         'view_details' => 'Vaata Üksikasju',
+        'empty_state_title' => 'Arvuta Oma Hüpoteek',
+        'empty_state_message' => 'Sisesta üleval kinnisvara hind ja laenu üksikasjad, et näha hinnangulisi igakuiseid makseid ja kogutud intressi.',
     ],
 
     'amortization' => [
@@ -147,5 +149,13 @@ return [
         'title' => 'Vidina Pealkiri',
         'leave_empty_for_default' => 'Jäta tühjaks globaalsete sätete kasutamiseks',
         'use_default' => 'Kasuta Vaikimisi',
+    ],
+
+    'errors' => [
+        'property_price_required' => 'Kinnisvara hind peab olema suurem kui 0',
+        'loan_amount_required' => 'Laenu summa peab olema suurem kui 0',
+        'loan_amount_exceeds_price' => 'Laenu summa ei tohi ületada kinnisvara hinda',
+        'loan_term_required' => 'Laenuperiood peab olema suurem kui 0',
+        'interest_rate_negative' => 'Intressimäär ei saa olla negatiivne',
     ],
 ];
