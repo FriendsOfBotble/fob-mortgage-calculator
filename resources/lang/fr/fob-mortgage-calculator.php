@@ -108,6 +108,11 @@ return [
         'insurance' => 'Assurance Habitation',
         'hoa' => 'Frais HOA',
     ],
+    'placeholders' => [
+        'property_price' => 'Entrez le prix',
+        'loan_amount' => 'Entrez le montant du prêt',
+        'interest_rate' => 'Entrez le taux',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Entrer en pourcentage du prix de la propriété',

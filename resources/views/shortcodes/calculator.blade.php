@@ -88,7 +88,7 @@
                            id="{{ $uniqueId }}-price"
                            name="property_price"
                            value="{{ $defaultPrice }}"
-                           placeholder="0"
+                           placeholder="{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.placeholders.property_price') }}"
                            inputmode="numeric"
                            data-calculate
                            data-format-number
@@ -134,7 +134,7 @@
                            id="{{ $uniqueId }}-loan-amount"
                            name="loan_amount"
                            value=""
-                           placeholder="0"
+                           placeholder="{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.placeholders.loan_amount') }}"
                            inputmode="numeric"
                            data-calculate
                            data-format-number>
@@ -173,7 +173,7 @@
                            min="0"
                            max="50"
                            step="0.01"
-                           placeholder="0"
+                           placeholder="{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.placeholders.interest_rate') }}"
                            data-calculate>
                     <span class="mortgage-calculator__input-suffix">%/{{ trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.year') }}</span>
                 </div>

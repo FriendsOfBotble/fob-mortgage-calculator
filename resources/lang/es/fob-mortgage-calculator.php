@@ -108,6 +108,11 @@ return [
         'insurance' => 'Seguro de Hogar',
         'hoa' => 'Cuotas HOA',
     ],
+    'placeholders' => [
+        'property_price' => 'Ingrese el precio',
+        'loan_amount' => 'Ingrese el monto del préstamo',
+        'interest_rate' => 'Ingrese la tasa',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Ingresar como porcentaje del precio de la propiedad',

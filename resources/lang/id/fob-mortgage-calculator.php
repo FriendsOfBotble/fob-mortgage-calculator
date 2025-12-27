@@ -108,6 +108,11 @@ return [
         'insurance' => 'Asuransi Rumah',
         'hoa' => 'Biaya HOA',
     ],
+    'placeholders' => [
+        'property_price' => 'Masukkan harga properti',
+        'loan_amount' => 'Masukkan jumlah pinjaman',
+        'interest_rate' => 'Masukkan suku bunga',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Masukkan sebagai persentase dari harga properti',

@@ -108,6 +108,11 @@ return [
         'insurance' => 'বাড়ি বীমা',
         'hoa' => 'HOA ফি',
     ],
+    'placeholders' => [
+        'property_price' => 'Enter property price',
+        'loan_amount' => 'Enter loan amount',
+        'interest_rate' => 'Enter rate',
+    ],
 
     'help' => [
         'down_payment_percent' => 'সম্পত্তি মূল্যের শতাংশ হিসাবে প্রবেশ করুন',

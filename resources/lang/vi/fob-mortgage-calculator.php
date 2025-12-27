@@ -109,6 +109,12 @@ return [
         'hoa' => 'Phí HOA',
     ],
 
+    'placeholders' => [
+        'property_price' => 'Nhập giá bất động sản',
+        'loan_amount' => 'Nhập số tiền vay',
+        'interest_rate' => 'Nhập lãi suất',
+    ],
+
     'help' => [
         'down_payment_percent' => 'Nhập theo phần trăm giá bất động sản',
         'down_payment_amount' => 'Nhập số tiền cố định',

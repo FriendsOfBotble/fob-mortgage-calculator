@@ -108,6 +108,11 @@ return [
         'insurance' => 'Страхування житла',
         'hoa' => 'Внески ОСББ',
     ],
+    'placeholders' => [
+        'property_price' => 'Enter property price',
+        'loan_amount' => 'Enter loan amount',
+        'interest_rate' => 'Enter rate',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Введіть у відсотках від ціни нерухомості',

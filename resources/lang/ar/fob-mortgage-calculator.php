@@ -108,6 +108,11 @@ return [
         'insurance' => 'التأمين على المنزل',
         'hoa' => 'رسوم HOA',
     ],
+    'placeholders' => [
+        'property_price' => 'أدخل سعر العقار',
+        'loan_amount' => 'أدخل مبلغ القرض',
+        'interest_rate' => 'أدخل السعر',
+    ],
 
     'help' => [
         'down_payment_percent' => 'أدخل كنسبة مئوية من سعر العقار',

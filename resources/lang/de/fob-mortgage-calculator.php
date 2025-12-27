@@ -108,6 +108,11 @@ return [
         'insurance' => 'Hausversicherung',
         'hoa' => 'HOA-Gebühren',
     ],
+    'placeholders' => [
+        'property_price' => 'Immobilienpreis eingeben',
+        'loan_amount' => 'Darlehensbetrag eingeben',
+        'interest_rate' => 'Zinssatz eingeben',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Als Prozentsatz des Immobilienpreises eingeben',

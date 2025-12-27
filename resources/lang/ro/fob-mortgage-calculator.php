@@ -108,6 +108,11 @@ return [
         'insurance' => 'Asigurare locuință',
         'hoa' => 'Taxe HOA',
     ],
+    'placeholders' => [
+        'property_price' => 'Enter property price',
+        'loan_amount' => 'Enter loan amount',
+        'interest_rate' => 'Enter rate',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Introduceți ca procent din prețul proprietății',

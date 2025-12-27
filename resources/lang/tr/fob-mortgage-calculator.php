@@ -108,6 +108,11 @@ return [
         'insurance' => 'Ev Sigortası',
         'hoa' => 'HOA Ücretleri',
     ],
+    'placeholders' => [
+        'property_price' => 'Fiyat girin',
+        'loan_amount' => 'Kredi tutarı girin',
+        'interest_rate' => 'Oran girin',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Emlak fiyatının yüzdesi olarak girin',

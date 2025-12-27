@@ -108,6 +108,11 @@ return [
         'insurance' => '주택 보험',
         'hoa' => '관리비',
     ],
+    'placeholders' => [
+        'property_price' => '부동산 가격 입력',
+        'loan_amount' => '대출 금액 입력',
+        'interest_rate' => '이자율 입력',
+    ],
 
     'help' => [
         'down_payment_percent' => '부동산 가격의 백분율로 입력하세요',

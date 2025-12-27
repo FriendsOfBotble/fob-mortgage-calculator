@@ -109,6 +109,12 @@ return [
         'hoa' => 'HOA Fees',
     ],
 
+    'placeholders' => [
+        'property_price' => 'Enter property price',
+        'loan_amount' => 'Enter loan amount',
+        'interest_rate' => 'Enter rate',
+    ],
+
     'help' => [
         'down_payment_percent' => 'Enter as percentage of property price',
         'down_payment_amount' => 'Enter as fixed amount',

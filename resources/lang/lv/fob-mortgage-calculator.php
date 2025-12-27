@@ -108,6 +108,11 @@ return [
         'insurance' => 'Mājas Apdrošināšana',
         'hoa' => 'HOA Maksas',
     ],
+    'placeholders' => [
+        'property_price' => 'Enter property price',
+        'loan_amount' => 'Enter loan amount',
+        'interest_rate' => 'Enter rate',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Ievadiet kā īpašuma cenas procentus',

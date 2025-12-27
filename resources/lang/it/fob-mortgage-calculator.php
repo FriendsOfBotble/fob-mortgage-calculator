@@ -108,6 +108,11 @@ return [
         'insurance' => 'Assicurazione Casa',
         'hoa' => 'Spese HOA',
     ],
+    'placeholders' => [
+        'property_price' => 'Inserisci il prezzo',
+        'loan_amount' => 'Inserisci importo prestito',
+        'interest_rate' => 'Inserisci il tasso',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Inserisci come percentuale del prezzo dell\'immobile',

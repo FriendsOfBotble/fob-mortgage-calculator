@@ -108,6 +108,11 @@ return [
         'insurance' => 'Kodukindlustus',
         'hoa' => 'HOA Tasud',
     ],
+    'placeholders' => [
+        'property_price' => 'Enter property price',
+        'loan_amount' => 'Enter loan amount',
+        'interest_rate' => 'Enter rate',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Sisesta protsendina kinnisvara hinnast',

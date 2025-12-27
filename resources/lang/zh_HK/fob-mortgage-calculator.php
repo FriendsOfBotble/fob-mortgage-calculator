@@ -108,6 +108,11 @@ return [
         'insurance' => '房屋保險',
         'hoa' => '管理費',
     ],
+    'placeholders' => [
+        'property_price' => '輸入物業價格',
+        'loan_amount' => '輸入貸款金額',
+        'interest_rate' => '輸入利率',
+    ],
 
     'help' => [
         'down_payment_percent' => '輸入物業價格的百分比',

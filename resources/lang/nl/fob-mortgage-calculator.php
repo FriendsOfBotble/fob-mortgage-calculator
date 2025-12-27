@@ -108,6 +108,11 @@ return [
         'insurance' => 'Woningverzekering',
         'hoa' => 'VvE-bijdrage',
     ],
+    'placeholders' => [
+        'property_price' => 'Voer prijs in',
+        'loan_amount' => 'Voer leenbedrag in',
+        'interest_rate' => 'Voer rente in',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Voer in als percentage van de woningprijs',

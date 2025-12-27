@@ -108,6 +108,11 @@ return [
         'insurance' => 'Застраховка жилище',
         'hoa' => 'Такси ТСН',
     ],
+    'placeholders' => [
+        'property_price' => 'Enter property price',
+        'loan_amount' => 'Enter loan amount',
+        'interest_rate' => 'Enter rate',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Въведете като процент от цената на имота',

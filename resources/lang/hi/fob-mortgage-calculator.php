@@ -108,6 +108,11 @@ return [
         'insurance' => 'गृह बीमा',
         'hoa' => 'HOA शुल्क',
     ],
+    'placeholders' => [
+        'property_price' => 'Enter property price',
+        'loan_amount' => 'Enter loan amount',
+        'interest_rate' => 'Enter rate',
+    ],
 
     'help' => [
         'down_payment_percent' => 'संपत्ति मूल्य के प्रतिशत के रूप में दर्ज करें',

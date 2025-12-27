@@ -108,6 +108,11 @@ return [
         'insurance' => 'Страхование жилья',
         'hoa' => 'Взносы ТСЖ',
     ],
+    'placeholders' => [
+        'property_price' => 'Введите цену',
+        'loan_amount' => 'Введите сумму кредита',
+        'interest_rate' => 'Введите ставку',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Введите в процентах от цены недвижимости',

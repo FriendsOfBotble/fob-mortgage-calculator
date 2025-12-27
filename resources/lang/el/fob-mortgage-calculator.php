@@ -108,6 +108,11 @@ return [
         'insurance' => 'Ασφάλιση Κατοικίας',
         'hoa' => 'Χρεώσεις HOA',
     ],
+    'placeholders' => [
+        'property_price' => 'Enter property price',
+        'loan_amount' => 'Enter loan amount',
+        'interest_rate' => 'Enter rate',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Εισάγετε ως ποσοστό της τιμής του ακινήτου',

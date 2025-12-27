@@ -50,7 +50,7 @@ class MortgageCalculatorShortcode
 
     public function adminConfig(array $attributes): ShortcodeForm
     {
-        return ShortcodeForm::createFromArray($attributes)
+        $form = ShortcodeForm::createFromArray($attributes)
             ->add('style', SelectField::class, SelectFieldOption::make()
                 ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.style'))
                 ->choices(MortgageCalculatorConfig::getStyleChoices())
@@ -107,10 +107,6 @@ class MortgageCalculatorShortcode
             ->add('show_extra_costs', OnOffField::class, OnOffFieldOption::make()
                 ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.show_extra_costs'))
                 ->value($attributes['show_extra_costs'] ?? MortgageCalculatorConfig::DEFAULT_SHOW_EXTRA_COSTS))
-            ->add('currency', TextField::class, TextFieldOption::make()
-                ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.currency'))
-                ->value($attributes['currency'] ?? MortgageCalculatorConfig::DEFAULT_CURRENCY)
-                ->maxLength(10))
             ->add('price_from', SelectField::class, SelectFieldOption::make()
                 ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.price_from'))
                 ->choices(MortgageCalculatorConfig::getPriceFromChoices())
@@ -119,5 +115,14 @@ class MortgageCalculatorShortcode
             ->add('primary_color', ColorField::class, ColorFieldOption::make()
                 ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.primary_color'))
                 ->value($attributes['primary_color'] ?? MortgageCalculatorConfig::DEFAULT_PRIMARY_COLOR));
+
+        if (! function_exists('cms_currency')) {
+            $form->add('currency', TextField::class, TextFieldOption::make()
+                ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.currency'))
+                ->value($attributes['currency'] ?? MortgageCalculatorConfig::DEFAULT_CURRENCY)
+                ->maxLength(10));
+        }
+
+        return $form;
     }
 }

@@ -108,6 +108,11 @@ return [
         'insurance' => '房屋保险',
         'hoa' => 'HOA费用',
     ],
+    'placeholders' => [
+        'property_price' => '输入房产价格',
+        'loan_amount' => '输入贷款金额',
+        'interest_rate' => '输入利率',
+    ],
 
     'help' => [
         'down_payment_percent' => '输入房产价格的百分比',

@@ -108,6 +108,11 @@ return [
         'insurance' => 'ประกันบ้าน',
         'hoa' => 'ค่าธรรมเนียม HOA',
     ],
+    'placeholders' => [
+        'property_price' => 'ใส่ราคาทรัพย์สิน',
+        'loan_amount' => 'ใส่จำนวนเงินกู้',
+        'interest_rate' => 'ใส่อัตราดอกเบี้ย',
+    ],
 
     'help' => [
         'down_payment_percent' => 'ป้อนเป็นเปอร์เซ็นต์ของราคาทรัพย์สิน',

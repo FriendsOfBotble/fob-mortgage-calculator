@@ -108,6 +108,11 @@ return [
         'insurance' => 'Seguro Residencial',
         'hoa' => 'Taxas de HOA',
     ],
+    'placeholders' => [
+        'property_price' => 'Digite o preço',
+        'loan_amount' => 'Digite o valor do empréstimo',
+        'interest_rate' => 'Digite a taxa',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Insira como porcentagem do preço do imóvel',

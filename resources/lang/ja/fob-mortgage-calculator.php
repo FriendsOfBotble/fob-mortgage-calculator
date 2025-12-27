@@ -108,6 +108,11 @@ return [
         'insurance' => '住宅保険',
         'hoa' => 'HOA費用',
     ],
+    'placeholders' => [
+        'property_price' => '物件価格を入力',
+        'loan_amount' => '借入額を入力',
+        'interest_rate' => '金利を入力',
+    ],
 
     'help' => [
         'down_payment_percent' => '物件価格のパーセントとして入力',

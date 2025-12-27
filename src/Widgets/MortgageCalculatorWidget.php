@@ -2,10 +2,12 @@
 
 namespace FriendsOfBotble\MortgageCalculator\Widgets;
 
+use Botble\Base\Forms\FieldOptions\ColorFieldOption;
 use Botble\Base\Forms\FieldOptions\NumberFieldOption;
 use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
 use Botble\Base\Forms\FieldOptions\SelectFieldOption;
 use Botble\Base\Forms\FieldOptions\TextFieldOption;
+use Botble\Base\Forms\Fields\ColorField;
 use Botble\Base\Forms\Fields\NumberField;
 use Botble\Base\Forms\Fields\OnOffField;
 use Botble\Base\Forms\Fields\SelectField;
@@ -27,14 +29,19 @@ class MortgageCalculatorWidget extends AbstractWidget
             'style' => 'default',
             'layout' => 'horizontal',
             'form_style' => 'default',
+            'form_size' => 'full',
             'form_margin' => '',
             'form_padding' => '',
+            'form_title' => '',
+            'form_description' => '',
             'default_price' => null,
+            'currency' => null,
             'default_term' => null,
             'default_rate' => null,
             'default_down_payment_type' => null,
             'default_down_payment_value' => null,
             'show_extra_costs' => null,
+            'primary_color' => null,
         ]);
 
         $this->setFrontendTemplate('plugins/fob-mortgage-calculator::widgets.mortgage-calculator');
@@ -48,21 +55,21 @@ class MortgageCalculatorWidget extends AbstractWidget
             'style' => Arr::get($config, 'style'),
             'layout' => Arr::get($config, 'layout'),
             'form_style' => Arr::get($config, 'form_style'),
-            'form_size' => 'full',
+            'form_size' => Arr::get($config, 'form_size', 'full'),
             'form_alignment' => 'start',
             'form_margin' => Arr::get($config, 'form_margin'),
             'form_padding' => Arr::get($config, 'form_padding'),
-            'form_title' => '',
-            'form_description' => '',
+            'form_title' => Arr::get($config, 'form_title'),
+            'form_description' => Arr::get($config, 'form_description'),
             'default_price' => Arr::get($config, 'default_price'),
             'default_term' => Arr::get($config, 'default_term'),
             'default_rate' => Arr::get($config, 'default_rate'),
             'default_down_payment_type' => Arr::get($config, 'default_down_payment_type'),
             'default_down_payment_value' => Arr::get($config, 'default_down_payment_value'),
             'show_extra_costs' => Arr::get($config, 'show_extra_costs'),
-            'currency' => null,
+            'currency' => Arr::get($config, 'currency'),
             'price_from' => 'none',
-            'primary_color' => null,
+            'primary_color' => Arr::get($config, 'primary_color'),
         ];
 
         return MortgageCalculatorHelper::prepareViewData($viewConfig, 'mc-widget-' . $this->getId());
@@ -70,7 +77,7 @@ class MortgageCalculatorWidget extends AbstractWidget
 
     protected function settingForm(): WidgetForm|string|null
     {
-        return WidgetForm::createFromArray($this->getConfig())
+        $form = WidgetForm::createFromArray($this->getConfig())
             ->add('name', TextField::class, TextFieldOption::make()
                 ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.widget.title')))
             ->add('style', SelectField::class, SelectFieldOption::make()
@@ -82,12 +89,19 @@ class MortgageCalculatorWidget extends AbstractWidget
             ->add('form_style', SelectField::class, SelectFieldOption::make()
                 ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.form_style'))
                 ->choices(MortgageCalculatorConfig::getFormStyleChoices()))
+            ->add('form_size', SelectField::class, SelectFieldOption::make()
+                ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.form_size'))
+                ->choices(MortgageCalculatorConfig::getFormSizeChoices()))
             ->add('form_margin', TextField::class, TextFieldOption::make()
                 ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.form_margin'))
                 ->helperText(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.form_margin_helper')))
             ->add('form_padding', TextField::class, TextFieldOption::make()
                 ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.form_padding'))
                 ->helperText(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.form_padding_helper')))
+            ->add('form_title', TextField::class, TextFieldOption::make()
+                ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.form_title')))
+            ->add('form_description', TextField::class, TextFieldOption::make()
+                ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.form_description')))
             ->add('default_price', NumberField::class, NumberFieldOption::make()
                 ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.default_price'))
                 ->helperText(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.default_price_helper')))
@@ -106,7 +120,19 @@ class MortgageCalculatorWidget extends AbstractWidget
                 ->addAttribute('step', '0.01')
                 ->helperText(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.widget.leave_empty_for_default')))
             ->add('show_extra_costs', OnOffField::class, OnOffFieldOption::make()
-                ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.show_extra_costs')));
+                ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.show_extra_costs')))
+            ->add('primary_color', ColorField::class, ColorFieldOption::make()
+                ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.primary_color'))
+                ->defaultValue(MortgageCalculatorConfig::DEFAULT_PRIMARY_COLOR));
+
+        if (! function_exists('cms_currency')) {
+            $form->add('currency', TextField::class, TextFieldOption::make()
+                ->label(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.shortcode.currency'))
+                ->helperText(trans('plugins/fob-mortgage-calculator::fob-mortgage-calculator.widget.leave_empty_for_default'))
+                ->maxLength(10));
+        }
+
+        return $form;
     }
 
     protected function requiredPlugins(): array

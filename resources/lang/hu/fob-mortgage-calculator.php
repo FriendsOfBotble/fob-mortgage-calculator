@@ -108,6 +108,11 @@ return [
         'insurance' => 'Lakásbiztosítás',
         'hoa' => 'Társasházi közös költség',
     ],
+    'placeholders' => [
+        'property_price' => 'Enter property price',
+        'loan_amount' => 'Enter loan amount',
+        'interest_rate' => 'Enter rate',
+    ],
 
     'help' => [
         'down_payment_percent' => 'Adja meg az ingatlanár százalékában',
